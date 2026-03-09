@@ -5,8 +5,34 @@ import { Footer } from '@/components/Footer';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'NCF Church | Welcome Home',
-  description: 'A modern community dedicated to faith, hope, and love.',
+  metadataBase: new URL('https://ncfonlinechurch.netlify.app'),
+  title: {
+    default: 'NCF Online Church | Welcome Home',
+    template: '%s | NCF Online Church',
+  },
+  description: 'Join NCF Online Church for live services, community worship, and spiritual growth. Everyone is welcome to join our global congregation.',
+  keywords: ['NCF Church', 'Nabweru Christian Fellowship', 'Church Kampala', 'Online Church', 'Worship', 'Jesus', 'Faith'],
+  authors: [{ name: 'NCF Church' }],
+  creator: 'NCF Church',
+  publisher: 'NCF Church',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    title: 'NCF Online Church | Welcome Home',
+    description: 'Join NCF Online Church for live services, community worship, and spiritual growth.',
+    url: 'https://ncfonlinechurch.netlify.app',
+    siteName: 'NCF Online Church',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'NCF Online Church | Welcome Home',
+    description: 'Join NCF Online Church for live services, community worship, and spiritual growth.',
+  },
 };
 
 export default function RootLayout({
