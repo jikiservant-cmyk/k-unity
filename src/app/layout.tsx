@@ -7,31 +7,31 @@ import { Toaster } from '@/components/ui/toaster';
 export const metadata: Metadata = {
   metadataBase: new URL('https://ncfonlinechurch.netlify.app'),
   title: {
-    default: 'NCF Online Church | Welcome Home',
-    template: '%s | NCF Online Church',
+    default: 'Nabweru Christian Fellowship | NCF Church',
+    template: '%s | Nabweru Christian Fellowship',
   },
-  description: 'Join NCF Online Church for live services, community worship, and spiritual growth. Everyone is welcome to join our global congregation.',
-  keywords: ['NCF Church', 'Nabweru Christian Fellowship', 'Church Kampala', 'Online Church', 'Worship', 'Jesus', 'Faith'],
-  authors: [{ name: 'NCF Church' }],
-  creator: 'NCF Church',
-  publisher: 'NCF Church',
+  description: 'Official website of Nabweru Christian Fellowship (NCF Church). Join our community in Kampala for live worship services, prayer, and biblical teaching. Experience grace and truth with us.',
+  keywords: ['Nabweru Christian Fellowship', 'NCF Church', 'Church in Kampala', 'Nabweru Road Church', 'Uganda Church', 'Online Worship', 'Faith Community', 'Christian Fellowship Kampala'],
+  authors: [{ name: 'Nabweru Christian Fellowship' }],
+  creator: 'Nabweru Christian Fellowship',
+  publisher: 'Nabweru Christian Fellowship',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: 'NCF Online Church | Welcome Home',
-    description: 'Join NCF Online Church for live services, community worship, and spiritual growth.',
+    title: 'Nabweru Christian Fellowship | Welcome Home',
+    description: 'Official website of Nabweru Christian Fellowship. Join us for live services, community worship, and spiritual growth in Kampala.',
     url: 'https://ncfonlinechurch.netlify.app',
-    siteName: 'NCF Online Church',
+    siteName: 'Nabweru Christian Fellowship',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'NCF Online Church | Welcome Home',
-    description: 'Join NCF Online Church for live services, community worship, and spiritual growth.',
+    title: 'Nabweru Christian Fellowship | Welcome Home',
+    description: 'Join Nabweru Christian Fellowship for live services, community worship, and spiritual growth.',
   },
 };
 
