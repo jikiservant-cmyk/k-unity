@@ -7,31 +7,31 @@ import { Toaster } from '@/components/ui/toaster';
 export const metadata: Metadata = {
   metadataBase: new URL('https://ncfonlinechurch.netlify.app'),
   title: {
-    default: 'Nabweru Christian Fellowship | NCF Church',
-    template: '%s | Nabweru Christian Fellowship',
+    default: 'Nabweru Community SACCO | Empowering Your Future',
+    template: '%s | Nabweru Community SACCO',
   },
-  description: 'Official website of Nabweru Christian Fellowship (NCF Church). Join our community in Kampala for live worship services, prayer, and biblical teaching. Experience grace and truth with us.',
-  keywords: ['Nabweru Christian Fellowship', 'NCF Church', 'Church in Kampala', 'Nabweru Road Church', 'Uganda Church', 'Online Worship', 'Faith Community', 'Christian Fellowship Kampala'],
-  authors: [{ name: 'Nabweru Christian Fellowship' }],
-  creator: 'Nabweru Christian Fellowship',
-  publisher: 'Nabweru Christian Fellowship',
+  description: 'Official website of Nabweru Community SACCO. We provide affordable loans, savings products, and financial guidance to empower our community in Kampala.',
+  keywords: ['Nabweru SACCO', 'Community Savings Kampala', 'Microfinance Uganda', 'Low interest loans', 'Nabweru Road SACCO', 'Financial Empowerment', 'Savings and Credit'],
+  authors: [{ name: 'Nabweru Community SACCO' }],
+  creator: 'Nabweru Community SACCO',
+  publisher: 'Nabweru Community SACCO',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: 'Nabweru Christian Fellowship | Welcome Home',
-    description: 'Official website of Nabweru Christian Fellowship. Join us for live services, community worship, and spiritual growth in Kampala.',
+    title: 'Nabweru Community SACCO | Secure Your Future',
+    description: 'Join Nabweru Community SACCO for affordable credit and reliable savings plans in the heart of Nabweru.',
     url: 'https://ncfonlinechurch.netlify.app',
-    siteName: 'Nabweru Christian Fellowship',
+    siteName: 'Nabweru Community SACCO',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Nabweru Christian Fellowship | Welcome Home',
-    description: 'Join Nabweru Christian Fellowship for live services, community worship, and spiritual growth.',
+    title: 'Nabweru Community SACCO | Secure Your Future',
+    description: 'Empowering the Nabweru community through cooperative financial services.',
   },
 };
 

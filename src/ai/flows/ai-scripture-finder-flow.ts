@@ -1,52 +1,52 @@
 'use server';
 /**
- * @fileOverview An AI-powered tool that answers user's questions using relevant Bible verses.
+ * @fileOverview A SACCO Financial Advisor AI agent.
  *
- * - aiScriptureFinder - A function that handles finding relevant scripture and explanations.
- * - AiScriptureFinderInput - The input type for the aiScriptureFinder function.
- * - AiScriptureFinderOutput - The return type for the aiScriptureFinder function.
+ * - aiFinancialAdvisor - A function that handles financial inquiries for SACCO members.
+ * - AiFinancialAdvisorInput - The input type for the aiFinancialAdvisor function.
+ * - AiFinancialAdvisorOutput - The return type for the aiFinancialAdvisor function.
  */
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
-const AiScriptureFinderInputSchema = z.object({
-  question: z.string().describe("The user's question about faith or specific topics."),
+const AiFinancialAdvisorInputSchema = z.object({
+  question: z.string().describe("The member's question about savings, loans, or financial strategies."),
 });
-export type AiScriptureFinderInput = z.infer<typeof AiScriptureFinderInputSchema>;
+export type AiFinancialAdvisorInput = z.infer<typeof AiFinancialAdvisorInputSchema>;
 
-const AiScriptureFinderOutputSchema = z.object({
-  explanation: z.string().describe("A concise explanation or summary related to the user's question, based on biblical principles."),
+const AiFinancialAdvisorOutputSchema = z.object({
+  explanation: z.string().describe("A comprehensive financial explanation or summary tailored to cooperative banking principles."),
   verses: z.array(z.object({
-    reference: z.string().describe("The Bible verse reference (e.g., 'John 3:16')."),
-    text: z.string().describe("The full text of the Bible verse."),
-  })).describe("An array of relevant Bible verses to answer the question."),
+    reference: z.string().describe("A short summary or title of the financial principle."),
+    text: z.string().describe("Detailed advice or steps related to the principle."),
+  })).describe("An array of specific financial tips or strategies."),
 });
-export type AiScriptureFinderOutput = z.infer<typeof AiScriptureFinderOutputSchema>;
+export type AiFinancialAdvisorOutput = z.infer<typeof AiFinancialAdvisorOutputSchema>;
 
-export async function aiScriptureFinder(input: AiScriptureFinderInput): Promise<AiScriptureFinderOutput> {
-  return aiScriptureFinderFlow(input);
+export async function aiScriptureFinder(input: AiFinancialAdvisorInput): Promise<AiFinancialAdvisorOutput> {
+  return aiFinancialAdvisorFlow(input);
 }
 
-const aiScriptureFinderPrompt = ai.definePrompt({
-  name: 'aiScriptureFinderPrompt',
-  input: {schema: AiScriptureFinderInputSchema},
-  output: {schema: AiScriptureFinderOutputSchema},
-  prompt: `You are an expert biblical scholar and theologian. Your task is to answer user questions about faith or specific topics by providing relevant Bible verses and a concise explanation that deepens understanding of scripture.
+const aiFinancialAdvisorPrompt = ai.definePrompt({
+  name: 'aiFinancialAdvisorPrompt',
+  input: {schema: AiFinancialAdvisorInputSchema},
+  output: {schema: AiFinancialAdvisorOutputSchema},
+  prompt: `You are an expert SACCO Financial Advisor. Your task is to provide members with professional, encouraging, and clear financial advice based on cooperative banking principles.
 
-Based on the following question, provide relevant Bible verses and a detailed explanation. Ensure the explanation integrates the verses seamlessly.
+Your goal is to help members build wealth, understand loan products, and develop healthy saving habits within the context of a SACCO (Savings and Credit Co-operative).
 
 Question: {{{question}}}`,
 });
 
-const aiScriptureFinderFlow = ai.defineFlow(
+const aiFinancialAdvisorFlow = ai.defineFlow(
   {
-    name: 'aiScriptureFinderFlow',
-    inputSchema: AiScriptureFinderInputSchema,
-    outputSchema: AiScriptureFinderOutputSchema,
+    name: 'aiFinancialAdvisorFlow',
+    inputSchema: AiFinancialAdvisorInputSchema,
+    outputSchema: AiFinancialAdvisorOutputSchema,
   },
   async (input) => {
-    const {output} = await aiScriptureFinderPrompt(input);
+    const {output} = await aiFinancialAdvisorPrompt(input);
     return output!;
   }
 );

@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Landmark, Briefcase, GraduationCap, Home, Car, Tractor } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { KineticHeadline } from "@/components/KineticHeadline"
 import { InkFlowText } from "@/components/InkFlowText"
@@ -8,125 +8,96 @@ import { MagneticButton } from "@/components/MagneticButton"
 import { ImageReveal } from "@/components/ImageReveal"
 import { cn } from "@/lib/utils"
 
-const ministries = [
+const products = [
   {
-    title: "YOUTH MINISTRY",
-    description: "Empowering the next generation to lead with faith and purpose. Our youth programs provide a safe space for exploration, growth, and authentic community building.",
-    image: "https://picsum.photos/seed/youth-min/800/800",
+    title: "BUSINESS LOANS",
+    description: "Scale your enterprise with our low-interest business credit. We provide flexible repayment plans tailored to your cash flow cycles.",
+    image: "https://images.unsplash.com/photo-1556740734-7f95626904ff?auto=format&fit=crop&q=80&w=800",
+    icon: <Briefcase className="h-10 w-10 text-[#FFB800]" />,
     bgColor: "bg-[#3E3E4E]",
-    textColor: "text-white",
-    btnClass: "bg-[#FFB800] text-[#3E3E4E] hover:bg-[#FFB800]/90"
+    btnClass: "bg-[#FFB800] text-[#3E3E4E]"
   },
   {
-    title: "COMMUNITY OUTREACH",
-    description: "Extending a helping hand to our neighbors. Through local partnerships and grassroots initiatives, we aim to address systemic needs and share radical hospitality.",
-    image: "https://picsum.photos/seed/outreach-min/800/800",
+    title: "AGRI-BUSINESS",
+    description: "Empowering farmers with equipment loans and seasonal input financing. Boost your productivity with specialized agricultural credit.",
+    image: "https://images.unsplash.com/photo-1592982537447-6f2a6a0c7c18?auto=format&fit=crop&q=80&w=800",
+    icon: <Tractor className="h-10 w-10 text-[#FFB800]" />,
     bgColor: "bg-[#003322]",
-    textColor: "text-white",
-    btnClass: "border-[#FFB800] text-[#FFB800] hover:bg-[#FFB800] hover:text-[#003322]"
+    btnClass: "border-[#FFB800] text-[#FFB800]"
   },
   {
-    title: "WOMEN'S MINISTRY",
-    description: "A community of women growing together in grace, wisdom, and love. Our gatherings focus on spiritual nourishment, deep connection, and supporting one another in every season of life.",
-    image: "https://picsum.photos/seed/women-min/800/800",
+    title: "SCHOOL FEES LOAN",
+    description: "Invest in your children's future without the stress. Our education loans are processed quickly to meet school opening deadlines.",
+    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=800",
+    icon: <GraduationCap className="h-10 w-10 text-[#FFB800]" />,
     bgColor: "bg-[#3E3E4E]",
-    textColor: "text-white",
-    btnClass: "bg-[#FFB800] text-[#3E3E4E] hover:bg-[#FFB800]/90"
+    btnClass: "bg-[#FFB800] text-[#3E3E4E]"
   },
   {
-    title: "MEN'S MINISTRY",
-    description: "Building strong men of faith through brotherhood, discipleship, and service. We challenge each other to live with integrity and lead our families and communities with purpose.",
-    image: "https://picsum.photos/seed/men-min/800/800",
+    title: "ASSET FINANCING",
+    description: "Acquire land, machinery, or vehicles through our structured asset financing. Own your assets while you pay back gradually.",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800",
+    icon: <Home className="h-10 w-10 text-[#FFB800]" />,
     bgColor: "bg-[#003322]",
-    textColor: "text-white",
-    btnClass: "border-[#FFB800] text-[#FFB800] hover:bg-[#FFB800] hover:text-[#003322]"
-  },
-  {
-    title: "KIDS MINISTRY",
-    description: "Nurturing the faith of our youngest members in a fun, safe, and engaging environment. We provide age-appropriate biblical teaching that helps children discover God's love.",
-    image: "https://picsum.photos/seed/kids-min/800/800",
-    bgColor: "bg-[#3E3E4E]",
-    textColor: "text-white",
-    btnClass: "bg-[#FFB800] text-[#3E3E4E] hover:bg-[#FFB800]/90"
-  },
-  {
-    title: "WORSHIP & ARTS",
-    description: "Expressing our faith through creative excellence. Our worship experience blends tradition with modern artistry to create an atmosphere of reverence and inspiration.",
-    image: "https://picsum.photos/seed/worship-min/800/800",
-    bgColor: "bg-[#003322]",
-    textColor: "text-white",
-    btnClass: "border-[#FFB800] text-[#FFB800] hover:bg-[#FFB800] hover:text-[#003322]"
-  },
-  {
-    title: "GLOBAL MISSIONS",
-    description: "Taking the message of hope beyond borders. We support international projects focused on education, sustainable development, and spiritual guidance across the globe.",
-    image: "https://picsum.photos/seed/missions-min/800/800",
-    bgColor: "bg-[#3E3E4E]",
-    textColor: "text-white",
-    btnClass: "bg-[#FFB800] text-[#3E3E4E] hover:bg-[#FFB800]/90"
+    btnClass: "border-[#FFB800] text-[#FFB800]"
   }
 ]
 
-export default function MinistriesPage() {
+export default function ProductsPage() {
   return (
     <div className="flex flex-col w-full">
-      {/* 1. Hero Section (Parallax) */}
-      <section className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-[#1A1A1A]">
+      <section className="relative h-[60vh] w-full overflow-hidden flex items-center justify-center bg-[#1A1A1A]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none" style={{ clipPath: 'inset(0)' }}>
           <div 
-            className="fixed inset-0 w-full h-full bg-center bg-cover -z-10 grayscale brightness-[0.4]"
+            className="fixed inset-0 w-full h-full bg-center bg-cover -z-10 grayscale brightness-[0.3]"
             style={{
-              backgroundImage: `url(https://picsum.photos/seed/gathering-hero/1920/1080)`,
+              backgroundImage: `url(https://images.unsplash.com/photo-1580519542036-c47de6196ba5?auto=format&fit=crop&q=80&w=1920)`,
             }}
           />
         </div>
         
-        <div className="container mx-auto px-6 relative z-10 flex justify-center text-center">
-          <div className="flex flex-col items-center">
-            <KineticHeadline 
-              lines={["OUR", "MINISTRIES"]} 
-              className="text-7xl md:text-[10rem] font-black uppercase tracking-tighter leading-[0.85] font-headline text-[#FFB800]"
-              staggerDelay={0.2}
-            />
-          </div>
+        <div className="container mx-auto px-6 relative z-10 text-center">
+          <KineticHeadline 
+            lines={["OUR LOAN", "PRODUCTS"]} 
+            className="text-7xl md:text-[10rem] font-black uppercase tracking-tighter leading-[0.85] font-headline text-[#FFB800]"
+            staggerDelay={0.2}
+          />
         </div>
       </section>
 
-      {/* 2. Z-Pattern Content Rows */}
-      {ministries.map((min, i) => (
+      {products.map((prod, i) => (
         <section key={i} className="relative w-full">
           <div className={cn(
             "flex flex-col lg:flex-row min-h-[600px]",
             i % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
           )}>
-            {/* Image Block - Always first in DOM for mobile top stacking */}
             <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-full">
               <ImageReveal 
-                src={min.image} 
-                alt={min.title} 
+                src={prod.image} 
+                alt={prod.title} 
                 className="w-full h-full grayscale brightness-75 hover:grayscale-0 transition-all duration-1000"
-                maskColor={min.bgColor === "bg-[#3E3E4E]" ? "bg-[#3E3E4E]" : "bg-[#003322]"}
+                maskColor={prod.bgColor === "bg-[#3E3E4E]" ? "bg-[#3E3E4E]" : "bg-[#003322]"}
               />
             </div>
 
-            {/* Text Block */}
             <div className={cn(
               "w-full lg:w-1/2 flex items-center justify-center p-12 md:p-24",
-              min.bgColor,
-              min.textColor
+              prod.bgColor,
+              "text-white"
             )}>
               <div className="max-w-md space-y-8">
+                <div className="mb-4">{prod.icon}</div>
                 <KineticHeadline 
-                  lines={[min.title]} 
-                  className="text-3xl md:text-5xl font-bold font-serif text-[#FFB800]"
+                  lines={[prod.title]} 
+                  className="text-4xl md:text-5xl font-bold font-serif text-[#FFB800]"
                 />
                 <InkFlowText delay={0.8} className="text-lg md:text-xl font-body leading-relaxed opacity-90">
-                  {min.description}
+                  {prod.description}
                 </InkFlowText>
                 <div className="pt-4">
                   <MagneticButton>
-                    <Button className={cn("h-14 px-10 rounded-full font-black text-lg group", min.btnClass)}>
-                      LEARN MORE <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    <Button className={cn("h-16 px-12 rounded-full font-black text-xl group", prod.btnClass)}>
+                      APPLY NOW <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </MagneticButton>
                 </div>
@@ -136,16 +107,15 @@ export default function MinistriesPage() {
         </section>
       ))}
 
-      {/* 3. Footer CTA Section */}
       <section className="py-32 bg-[#003322] text-white text-center">
         <div className="container mx-auto px-6">
           <KineticHeadline 
-            lines={["GET INVOLVED TODAY"]} 
+            lines={["NEED A CUSTOM PLAN?"]} 
             className="text-4xl md:text-7xl font-black uppercase font-headline mb-12"
           />
           <MagneticButton>
             <Button variant="outline" className="border-[#FFB800] text-[#FFB800] hover:bg-[#FFB800] hover:text-[#003322] font-black h-20 px-12 rounded-full text-2xl group transition-all duration-500">
-              JOIN A TEAM <ArrowRight className="ml-2 h-8 w-8 group-hover:translate-x-2 transition-transform" />
+              CONTACT AN ADVISOR <ArrowRight className="ml-2 h-8 w-8 group-hover:translate-x-2 transition-transform" />
             </Button>
           </MagneticButton>
         </div>
