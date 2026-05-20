@@ -7,11 +7,11 @@ import { Toaster } from '@/components/ui/toaster';
 export const metadata: Metadata = {
   metadataBase: new URL('https://ncfonlinechurch.netlify.app'),
   title: {
-    default: 'Nabweru Community SACCO | Empowering Your Future',
+    default: 'Nabweru Community SACCO | Empowering Financial Growth',
     template: '%s | Nabweru Community SACCO',
   },
-  description: 'Official website of Nabweru Community SACCO. We provide affordable loans, savings products, and financial guidance to empower our community in Kampala.',
-  keywords: ['Nabweru SACCO', 'Community Savings Kampala', 'Microfinance Uganda', 'Low interest loans', 'Nabweru Road SACCO', 'Financial Empowerment', 'Savings and Credit'],
+  description: 'Official website of Nabweru Community SACCO. We provide professional savings, affordable credit, and financial literacy to empower the people of Nabweru.',
+  keywords: ['Nabweru SACCO', 'Community Banking Kampala', 'Microfinance Uganda', 'Low interest loans', 'Savings Cooperative', 'Financial Empowerment'],
   authors: [{ name: 'Nabweru Community SACCO' }],
   creator: 'Nabweru Community SACCO',
   publisher: 'Nabweru Community SACCO',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Nabweru Community SACCO | Secure Your Future',
-    description: 'Join Nabweru Community SACCO for affordable credit and reliable savings plans in the heart of Nabweru.',
+    description: 'Join Nabweru Community SACCO for reliable savings and affordable business credit in Nabweru.',
     url: 'https://ncfonlinechurch.netlify.app',
     siteName: 'Nabweru Community SACCO',
     locale: 'en_US',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Nabweru Community SACCO | Secure Your Future',
-    description: 'Empowering the Nabweru community through cooperative financial services.',
+    description: 'Empowering the Nabweru community through cooperative financial excellence.',
   },
 };
 
@@ -45,11 +45,11 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Playfair+Display:wght@700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased min-h-screen flex flex-col bg-background text-foreground">
         <Navbar />
-        <main className="flex-1">
+        <main className="flex-1 overflow-x-hidden">
           {children}
         </main>
         <Footer />
