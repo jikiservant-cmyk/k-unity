@@ -4,30 +4,30 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 243 22% 10%;
+    --background: 45 43% 97%; /* Cream #faf8f3 */
+    --foreground: 240 29% 15%; /* Navy Dark #1a1a2e */
     --card: 0 0% 100%;
-    --card-foreground: 243 22% 10%;
+    --card-foreground: 240 29% 15%;
     --popover: 0 0% 100%;
-    --popover-foreground: 243 22% 10%;
-    --primary: 159 100% 10%; /* #003322 - Forest Green */
+    --popover-foreground: 240 29% 15%;
+    --primary: 215 68% 14%; /* Navy #0b1f3a */
     --primary-foreground: 0 0% 100%;
-    --secondary: 43 100% 50%; /* #FFB800 - Gold */
-    --secondary-foreground: 159 100% 10%;
-    --muted: 243 10% 96%;
-    --muted-foreground: 243 15% 45%;
-    --accent: 43 100% 50%;
-    --accent-foreground: 159 100% 10%;
+    --secondary: 39 66% 48%; /* Gold #c9922a */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 11% 40%;
+    --muted-foreground: 220 11% 40%;
+    --accent: 39 66% 48%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-    --border: 243 15% 90%;
-    --input: 243 15% 90%;
-    --ring: 43 100% 50%;
-    --radius: 0.5rem;
+    --border: 45 15% 90%;
+    --input: 45 15% 90%;
+    --ring: 39 66% 48%;
+    --radius: 0.75rem;
 
-    --font-headline: 'Montserrat', sans-serif;
-    --font-serif: 'Playfair Display', serif;
-    --font-body: 'Open Sans', sans-serif;
+    --font-headline: 'Outfit', sans-serif;
+    --font-serif: 'Cormorant Garamond', serif;
+    --font-body: 'Outfit', sans-serif;
   }
 }
 
@@ -36,10 +36,10 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground font-body antialiased selection:bg-[#FFB800] selection:text-[#003322];
+    @apply bg-background text-foreground font-body antialiased selection:bg-[#c9922a] selection:text-white;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-headline tracking-tight;
+    @apply font-serif tracking-tight;
   }
 }
 
@@ -146,6 +146,9 @@
   animation: blurFocus 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-.hero-overlay {
-  background: linear-gradient(to bottom, rgba(0, 51, 34, 0.7) 0%, rgba(0, 51, 34, 0.85) 100%);
+/* Grid Line Background */
+.bg-grid-lines {
+  background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
 }
