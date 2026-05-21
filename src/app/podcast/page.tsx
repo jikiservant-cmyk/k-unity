@@ -1,7 +1,7 @@
 'use client';
 
-import React from "react";
-import { Play, ArrowRight, Clock, Calendar, Volume2, SkipForward, SkipBack } from "lucide-react";
+import React, { useEffect, useState } from "react";
+import { Play, Clock, Volume2, SkipForward, SkipBack } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { MagneticButton } from "@/components/MagneticButton";
 import { KineticHeadline } from "@/components/KineticHeadline";
@@ -45,6 +45,14 @@ const episodes = [
 ];
 
 export default function PodcastPage() {
+  const [animationDurations, setAnimationDurations] = useState<number[]>([]);
+
+  useEffect(() => {
+    // Set random animation durations only after mounting to avoid hydration mismatch
+    const durations = Array.from({ length: 10 }, () => 1 + Math.random());
+    setAnimationDurations(durations);
+  }, []);
+
   return (
     <div className="flex flex-col w-full min-h-screen bg-[#1A1A1A] pb-32">
       {/* 1. Latest Episode Hero */}
@@ -185,13 +193,13 @@ export default function PodcastPage() {
 
           {/* Minimalist Visualizer (Right) */}
           <div className="hidden lg:flex items-end space-x-1 h-8 w-24">
-            {[0.4, 0.7, 0.9, 0.5, 0.8, 0.6, 0.3, 0.8, 0.5, 0.9].map((h, i) => (
+            {animationDurations.length > 0 && [0.4, 0.7, 0.9, 0.5, 0.8, 0.6, 0.3, 0.8, 0.5, 0.9].map((h, i) => (
               <div 
                 key={i} 
                 className="w-1 bg-white opacity-20"
                 style={{ 
                   height: `${h * 100}%`,
-                  animation: `visualizerPulse ${1 + Math.random()}s infinite ease-in-out` 
+                  animation: `visualizerPulse ${animationDurations[i]}s infinite ease-in-out` 
                 }}
               />
             ))}
