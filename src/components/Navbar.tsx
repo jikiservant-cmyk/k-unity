@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 
 const navLinks = [
+  { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Services", href: "/sermons" },
   { name: "Savings", href: "/podcast" },
@@ -47,9 +48,11 @@ export function Navbar() {
           </div>
 
           <div className="hidden md:flex items-center">
-            <Button className="bg-[#c9922a] hover:bg-[#e8b455] text-white border-none rounded-[6px] px-6 h-10 font-medium text-sm transition-all">
-              Join Today
-            </Button>
+            <Link href="/contact">
+              <Button className="bg-[#c9922a] hover:bg-[#e8b455] text-white border-none rounded-[6px] px-6 h-10 font-medium text-sm transition-all">
+                Join Today
+              </Button>
+            </Link>
           </div>
           
           <button
@@ -77,9 +80,11 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Button className="w-full bg-[#c9922a] text-white rounded-[6px] h-14 text-lg">
-            Join Today
-          </Button>
+          <Link href="/contact" onClick={() => setIsOpen(false)}>
+            <Button className="w-full bg-[#c9922a] text-white rounded-[6px] h-14 text-lg">
+              Join Today
+            </Button>
+          </Link>
         </div>
       )}
     </header>
