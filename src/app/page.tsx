@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full relative">
       {/* 1. HERO SECTION */}
-      <section className="relative min-h-[90vh] lg:min-h-[95vh] flex items-center bg-[#0b1f3a] overflow-hidden px-6 lg:px-[6%]">
+      <section className="relative min-h-[90vh] lg:min-h-[95vh] flex items-center bg-[#0b1f3a] overflow-hidden">
         {/* Full-width Slider Background */}
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <Carousel setApi={setApi} opts={{ loop: true, duration: 45 }} className="w-full h-full">
@@ -57,13 +57,12 @@ export default function Home() {
               ))}
             </CarouselContent>
           </Carousel>
-          {/* Subtle gradient overlay for readability */}
           <div className="absolute inset-0 bg-gradient-to-r from-[#0b1f3a]/80 to-transparent z-[1]" />
         </div>
 
         <div className="absolute inset-0 bg-grid-lines opacity-10 pointer-events-none" />
         
-        <div className="container mx-auto relative z-10 py-20 lg:py-0">
+        <div className="container mx-auto relative z-10 px-6 lg:px-[6%]">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-[#c9922a]/20 border border-[#c9922a]/50 px-4 py-1.5 rounded-full mb-8 slide-up">
               <ShieldCheck className="h-4 w-4 text-[#c9922a]" />
@@ -97,7 +96,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Stats Section Overlay */}
         <div className="absolute left-[6%] bottom-10 lg:bottom-20 hidden md:flex gap-10 lg:gap-16 z-20 slide-up" style={{ animationDelay: '0.6s' }}>
           <div>
             <div className="text-3xl lg:text-4xl font-serif text-white font-semibold">12<span className="text-[#c9922a]">K+</span></div>
@@ -129,7 +127,7 @@ export default function Home() {
               </InkFlowText>
               <div className="relative aspect-video rounded-2xl overflow-hidden shadow-lg mt-8">
                 <ImageReveal 
-                  src="/images/IMG_8919.jpg" 
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReXHwcVGLPFUxUSrF6ByiOgC_4yDmET3Va0w&s" 
                   alt="Kololo Heritage" 
                   className="w-full h-full"
                   maskColor="bg-[#faf8f3]"
@@ -220,9 +218,11 @@ export default function Home() {
             <p className="text-white/70 text-base sm:text-lg font-light mt-4">Join the legacy of Kololo High School financial excellence.</p>
           </div>
           <MagneticButton className="w-full sm:w-auto">
-            <Button className="w-full sm:w-auto bg-white text-[#c9922a] hover:shadow-2xl hover:-translate-y-1 h-16 sm:h-20 px-8 sm:px-12 rounded-[8px] text-lg sm:text-xl font-bold transition-all whitespace-nowrap">
-              Join K-unity Today →
-            </Button>
+            <Link href="/contact" className="w-full sm:w-auto">
+              <Button className="w-full sm:w-auto bg-white text-[#c9922a] hover:shadow-2xl hover:-translate-y-1 h-16 sm:h-20 px-8 sm:px-12 rounded-[8px] text-lg sm:text-xl font-bold transition-all whitespace-nowrap">
+                Join K-unity Today →
+              </Button>
+            </Link>
           </MagneticButton>
         </div>
       </section>
