@@ -12,7 +12,7 @@ const products = [
   {
     title: "BUSINESS LOANS",
     description: "Scale your enterprise with our low-interest business credit. We provide flexible repayment plans tailored to your cash flow cycles.",
-    image: "https://images.unsplash.com/photo-1556740734-7f95626904ff?auto=format&fit=crop&q=80&w=800",
+    image: "https://media.licdn.com/dms/image/v2/D4D12AQHfVo1p5cGcag/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1713929793032?e=2147483647&v=beta&t=q_qaJdYmlc5QVwX6OpBhxk2S1vpkdq1nNi-59odRW-A",
     icon: <Briefcase className="h-8 w-8 sm:h-10 sm:w-10 text-[#FFB800]" />,
     bgColor: "bg-[#3E3E4E]",
     btnClass: "bg-[#FFB800] text-[#3E3E4E]"
@@ -75,7 +75,7 @@ export default function ProductsPage() {
               <ImageReveal 
                 src={prod.image} 
                 alt={prod.title} 
-                className="w-full h-full brightness-75 transition-all duration-1000"
+                className="w-full h-full transition-all duration-1000"
                 maskColor={prod.bgColor === "bg-[#3E3E4E]" ? "bg-[#3E3E4E]" : "bg-[#003322]"}
               />
             </div>
