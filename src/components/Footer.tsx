@@ -9,11 +9,11 @@ export function Footer() {
           <div className="space-y-6">
             <Link href="/" className="flex items-center">
               <span className="text-2xl font-serif text-white tracking-tight">
-                Nabweru <span className="text-[#c9922a]">SACCO</span>
+                K-unity <span className="text-[#c9922a]">Finance SACCO</span>
               </span>
             </Link>
             <p className="text-sm leading-relaxed font-body font-light max-w-xs">
-              Empowering communities across Uganda through transparent, accessible and inclusive financial services since 2005.
+              Rooted in the excellence of Kololo High School, K-unity Finance SACCO empowers members through transparent financial services.
             </p>
             <p className="text-[11px] text-white/30 uppercase tracking-widest font-bold">
               Licensed by UMRA · Reg. No. UMRA/DT/0124
@@ -46,22 +46,22 @@ export function Footer() {
             <ul className="space-y-6 text-sm font-light">
               <li className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 text-[#c9922a] mt-1 shrink-0" />
-                <span>Nabweru Christian Fellowship Church, 9GGV+56F, Nabweru Rd, Kampala</span>
+                <span>Kololo High School Area, Kampala, Uganda</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-[#c9922a] shrink-0" />
-                <span>(+256) 7XX-XXXXXX</span>
+                <span>(+256) 763 019052</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-[#c9922a] shrink-0" />
-                <span>info@ncf-sacco.co.ug</span>
+                <span>info@k-unitysacco.co.ug</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-[12px] font-light">© {new Date().getFullYear()} Nabweru Community SACCO. All rights reserved.</p>
+          <p className="text-[12px] font-light">© {new Date().getFullYear()} K-unity Finance SACCO. All rights reserved.</p>
           <div className="flex space-x-6">
             <Link href="#" className="text-white/20 hover:text-[#c9922a] transition-colors"><Facebook className="h-5 w-5" /></Link>
             <Link href="#" className="text-white/20 hover:text-[#c9922a] transition-colors"><Twitter className="h-5 w-5" /></Link>

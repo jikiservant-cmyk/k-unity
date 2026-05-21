@@ -26,7 +26,7 @@ export function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center group">
               <span className="text-2xl font-serif text-white tracking-tight">
-                Nabweru <span className="text-[#c9922a]">SACCO</span>
+                K-unity <span className="text-[#c9922a]">Finance SACCO</span>
               </span>
             </Link>
 

@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image"
-import { Shield, Target, Award, ArrowRight } from "lucide-react"
+import { Shield, Target, Award, ArrowRight, School } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { KineticHeadline } from "@/components/KineticHeadline"
 import { InkFlowText } from "@/components/InkFlowText"
@@ -14,19 +14,19 @@ const leadership = [
   {
     name: "Mubiru Florence",
     role: "SACCO Chairperson",
-    bio: "Dedicated to transparent leadership and community economic growth.",
+    bio: "Visionary leader focused on expanding the K-unity reach and member wealth.",
     image: "https://picsum.photos/seed/leader1/400/500"
   },
   {
     name: "Kembabazi Rose",
     role: "Operations Manager",
-    bio: "Ensuring efficient service delivery and member satisfaction.",
-    image: "https://picsum.photos/seed/leader2/400/500"
+    bio: "Ensuring efficient service delivery and maintaining the Kololo heritage.",
+    image: "/images/IMG_8891.jpg"
   },
   {
     name: "Sebalamu Geoffrey",
     role: "Investment Director",
-    bio: "Crafting sustainable wealth creation strategies for our members.",
+    bio: "Developing sustainable portfolios for our diverse membership base.",
     image: "https://picsum.photos/seed/leader3/400/500"
   }
 ]
@@ -46,8 +46,8 @@ export default function AboutPage() {
         
         <div className="container mx-auto px-6 relative z-10 text-center">
           <KineticHeadline 
-            lines={["ABOUT OUR", "COOPERATIVE"]} 
-            className="text-7xl md:text-[10rem] font-black uppercase tracking-tighter leading-[0.85] font-serif text-[#FFB800]"
+            lines={["ABOUT K-UNITY", "FINANCE SACCO"]} 
+            className="text-7xl md:text-[8rem] font-black uppercase tracking-tighter leading-[0.85] font-serif text-[#FFB800]"
             staggerDelay={0.2}
           />
         </div>
@@ -58,13 +58,13 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto text-center space-y-12">
             <BlurFocusText>
               <h2 className="text-[#FFB800] text-3xl md:text-5xl font-black uppercase font-serif tracking-tight">
-                Mission & Vision
+                Roots in Excellence
               </h2>
             </BlurFocusText>
             
             <div className="space-y-8">
               <InkFlowText delay={0.8} className="text-xl md:text-2xl font-body leading-relaxed text-white/90 italic">
-                "To provide quality financial services that improve the socio-economic status of our members through a professional, transparent, and sustainable cooperative model."
+                "The 'K' in K-unity represents Kololo High School, our origin and inspiration. We provide quality financial services that improve the socio-economic status of our members through a transparent, professional model."
               </InkFlowText>
             </div>
           </div>
@@ -76,28 +76,28 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <KineticHeadline 
-                lines={["THE JOURNEY", "OF GROWTH"]} 
+                lines={["A LEGACY OF", "FINANCIAL UNITY"]} 
                 className="text-4xl md:text-6xl font-black uppercase font-headline tracking-tighter text-[#2D2B44]"
               />
               <Separator className="bg-[#2D2B44]/10 w-32 h-[2px]" />
               <InkFlowText className="text-muted-foreground text-lg leading-relaxed font-body">
-                Founded in 2005 as a small savings group by 12 community members, Nabweru Community SACCO has grown into a leading financial institution serving over 5,000 members across Nabweru and greater Kampala.
+                K-unity Finance SACCO was established by the alumni and community of Kololo High School. What began as a small savings group has evolved into a premier financial institution serving thousands across Uganda.
               </InkFlowText>
               <div className="grid grid-cols-2 gap-8 pt-4">
                 <div className="space-y-2">
-                  <span className="text-4xl font-black text-[#FFB800]">15+</span>
-                  <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Years of Service</p>
+                  <span className="text-4xl font-black text-[#FFB800]">20+</span>
+                  <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Years of Heritage</p>
                 </div>
                 <div className="space-y-2">
-                  <span className="text-4xl font-black text-[#FFB800]">5K+</span>
+                  <span className="text-4xl font-black text-[#FFB800]">12K+</span>
                   <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Active Members</p>
                 </div>
               </div>
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <ImageReveal 
-                src="https://images.unsplash.com/photo-1554224155-169641357599?auto=format&fit=crop&q=80&w=800" 
-                alt="SACCO Office" 
+                src="/images/IMG_8919.jpg" 
+                alt="SACCO History" 
                 className="w-full h-full grayscale hover:grayscale-0 transition-all duration-1000"
               />
             </div>
@@ -141,12 +141,12 @@ export default function AboutPage() {
       <section className="py-24 bg-[#2D2B44] text-white text-center">
         <div className="container mx-auto px-6">
           <KineticHeadline 
-            lines={["READY TO START", "SAVING?"]} 
+            lines={["SECURE YOUR", "FUTURE TODAY"]} 
             className="text-4xl md:text-6xl font-black uppercase font-headline mb-8"
           />
           <MagneticButton>
             <Button className="bg-[#FFB800] text-[#2D2B44] hover:bg-[#FFB800]/90 font-black h-16 px-10 rounded-full text-xl group">
-              JOIN THE SACCO <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform" />
+              JOIN K-UNITY <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform" />
             </Button>
           </MagneticButton>
         </div>
