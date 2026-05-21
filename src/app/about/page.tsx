@@ -96,8 +96,8 @@ export default function AboutPage() {
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
               <ImageReveal 
-                src="/images/IMG_8919.jpg" 
-                alt="SACCO History" 
+                src="https://media.gettyimages.com/id/1151368592/photo/taxi-with-the-taxi-driver-posing-in-hillbrow-johannesburg.jpg?s=612x612&w=0&k=20&c=4m9x8pDnLB3I2OogORjG_t4rxzAFyx4Tp_jvq1zUcac=" 
+                alt="Entrepreneurial Spirit" 
                 className="w-full h-full transition-all duration-1000"
                 maskColor="bg-[#0b1f3a]"
               />

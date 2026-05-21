@@ -47,6 +47,12 @@
       "description": "Nakasero Market Kampala - Supporting local commerce",
       "imageUrl": "https://www.4x4uganda.com/wp-content/uploads/2023/01/Nakasero-Market-Kampala.jpg",
       "imageHint": "kampala market"
+    },
+    {
+      "id": "taxi-entrepreneur",
+      "description": "A taxi driver entrepreneur in the city",
+      "imageUrl": "https://media.gettyimages.com/id/1151368592/photo/taxi-with-the-taxi-driver-posing-in-hillbrow-johannesburg.jpg?s=612x612&w=0&k=20&c=4m9x8pDnLB3I2OogORjG_t4rxzAFyx4Tp_jvq1zUcac=",
+      "imageHint": "taxi driver"
     }
   ]
 }
