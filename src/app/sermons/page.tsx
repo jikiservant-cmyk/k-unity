@@ -49,7 +49,7 @@ export default function ProductsPage() {
       <section className="relative h-[40vh] sm:h-[50vh] lg:h-[60vh] w-full overflow-hidden flex items-center justify-center bg-[#1A1A1A]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none" style={{ clipPath: 'inset(0)' }}>
           <div 
-            className="fixed inset-0 w-full h-full bg-center bg-cover -z-10 grayscale brightness-[0.3]"
+            className="fixed inset-0 w-full h-full bg-center bg-cover -z-10 brightness-[0.3]"
             style={{
               backgroundImage: `url(https://images.unsplash.com/photo-1580519542036-c47de6196ba5?auto=format&fit=crop&q=80&w=1920)`,
             }}
@@ -75,7 +75,7 @@ export default function ProductsPage() {
               <ImageReveal 
                 src={prod.image} 
                 alt={prod.title} 
-                className="w-full h-full grayscale brightness-75 hover:grayscale-0 transition-all duration-1000"
+                className="w-full h-full brightness-75 transition-all duration-1000"
                 maskColor={prod.bgColor === "bg-[#3E3E4E]" ? "bg-[#3E3E4E]" : "bg-[#003322]"}
               />
             </div>

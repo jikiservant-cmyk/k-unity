@@ -146,7 +146,7 @@ export default function SavingsPage() {
                   <ImageReveal 
                     src={plan.image} 
                     alt={plan.title} 
-                    className="w-full h-full object-cover grayscale brightness-90 group-hover:grayscale-0 transition-all duration-700 rounded-2xl shadow-lg"
+                    className="w-full h-full object-cover brightness-90 transition-all duration-700 rounded-2xl shadow-lg"
                     maskColor="bg-[#0b1f3a]"
                   />
                 </div>
@@ -164,7 +164,7 @@ export default function SavingsPage() {
                       ))}
                     </div>
                   </div>
-                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0b1f3a] font-serif group-hover:text-[#c9922a] transition-colors leading-tight">
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#0b1f3a] font-serif transition-colors leading-tight">
                     {plan.title}
                   </h3>
                   <InkFlowText className="text-[#5a6070] font-body text-sm sm:text-base lg:text-lg max-w-2xl leading-relaxed">
