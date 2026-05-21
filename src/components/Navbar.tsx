@@ -49,17 +49,18 @@ export function Navbar() {
                 alt="K-unity Logo" 
                 className={cn(
                   "transition-all duration-500 object-contain",
-                  isScrolled ? "h-8" : "h-9 sm:h-10"
+                  isScrolled ? "h-8" : "h-9 sm:h-12"
                 )}
               />
-              <span className={cn(
-                "font-serif text-white tracking-tight leading-tight transition-all duration-500 ease-in-out overflow-hidden whitespace-nowrap",
+              <div className={cn(
+                "font-serif text-white tracking-tight transition-all duration-500 ease-in-out overflow-hidden flex flex-col justify-center",
                 isScrolled 
                   ? "max-w-0 opacity-0 ml-0" 
-                  : "max-w-[300px] sm:max-w-[400px] opacity-100 ml-2 sm:ml-3 text-lg sm:text-2xl"
+                  : "max-w-[300px] sm:max-w-[400px] opacity-100 ml-2 sm:ml-3"
               )}>
-                K-unity <span className="text-[#c9922a]">Finance SACCO</span>
-              </span>
+                <span className="text-sm sm:text-base lg:text-lg font-bold leading-none">K-unity</span>
+                <span className="text-[#c9922a] text-[8px] sm:text-[10px] lg:text-[11px] uppercase tracking-widest font-bold leading-none mt-1">Finance SACCO</span>
+              </div>
             </Link>
 
             <div className={cn(
