@@ -24,19 +24,24 @@ export function Navbar() {
       <nav className="container mx-auto px-6 lg:px-12">
         <div className="flex h-[72px] items-center justify-between">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center group">
-              <span className="text-2xl font-serif text-white tracking-tight">
+            <Link href="/" className="flex items-center group gap-3">
+              <img 
+                src="/images/Adobe Express - file.png" 
+                alt="K-unity Logo" 
+                className="h-10 w-auto object-contain"
+              />
+              <span className="text-xl sm:text-2xl font-serif text-white tracking-tight leading-tight">
                 K-unity <span className="text-[#c9922a]">Finance SACCO</span>
               </span>
             </Link>
 
-            <div className="hidden md:flex items-center ml-16 space-x-10">
+            <div className="hidden md:flex items-center ml-10 lg:ml-16 space-x-6 lg:space-x-10">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
                   className={cn(
-                    "text-[13px] font-normal tracking-[0.02em] transition-all hover:text-white font-body",
+                    "text-[13px] font-normal tracking-[0.02em] transition-all hover:text-white font-body whitespace-nowrap",
                     pathname === link.href ? "text-[#c9922a]" : "text-white/65"
                   )}
                 >

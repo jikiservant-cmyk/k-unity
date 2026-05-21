@@ -7,7 +7,12 @@ export function Footer() {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-16">
           <div className="space-y-6">
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex items-center gap-3">
+              <img 
+                src="/images/Adobe Express - file.png" 
+                alt="K-unity Logo" 
+                className="h-12 w-auto object-contain brightness-110"
+              />
               <span className="text-2xl font-serif text-white tracking-tight">
                 K-unity <span className="text-[#c9922a]">Finance SACCO</span>
               </span>
