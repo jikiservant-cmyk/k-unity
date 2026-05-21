@@ -71,10 +71,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-24 bg-white text-[#0b1f3a]">
+      <section className="py-20 lg:py-24 bg-white text-[#0b1f3a] overflow-hidden">
         <div className="container mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="space-y-6 lg:space-y-8">
+            <div className="space-y-6 lg:space-y-8 slide-up">
               <KineticHeadline 
                 lines={["A LEGACY OF", "FINANCIAL UNITY"]} 
                 className="text-3xl sm:text-4xl lg:text-6xl font-black uppercase font-headline tracking-tighter text-[#0b1f3a] leading-tight"
@@ -84,17 +84,17 @@ export default function AboutPage() {
                 K-unity Finance SACCO was established by the alumni and community of Kololo High School. What began as a small savings group has evolved into a premier financial institution serving thousands across Uganda.
               </InkFlowText>
               <div className="grid grid-cols-2 gap-6 sm:gap-8 pt-4">
-                <div className="space-y-1">
+                <div className="space-y-1 slide-up" style={{ animationDelay: '0.2s' }}>
                   <span className="text-3xl sm:text-4xl font-black text-[#c9922a]">20+</span>
                   <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Years of Heritage</p>
                 </div>
-                <div className="space-y-1">
+                <div className="space-y-1 slide-up" style={{ animationDelay: '0.3s' }}>
                   <span className="text-3xl sm:text-4xl font-black text-[#c9922a]">12K+</span>
                   <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Active Members</p>
                 </div>
               </div>
             </div>
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl slide-up" style={{ animationDelay: '0.4s' }}>
               <ImageReveal 
                 src="https://media.gettyimages.com/id/1151368592/photo/taxi-with-the-taxi-driver-posing-in-hillbrow-johannesburg.jpg?s=612x612&w=0&k=20&c=4m9x8pDnLB3I2OogORjG_t4rxzAFyx4Tp_jvq1zUcac=" 
                 alt="Entrepreneurial Spirit" 
@@ -106,9 +106,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-24 bg-[#faf8f3]">
+      <section className="py-20 lg:py-24 bg-[#faf8f3] overflow-hidden">
         <div className="container mx-auto px-6 md:px-12">
-          <div className="text-center mb-12 lg:mb-16">
+          <div className="text-center mb-12 lg:mb-16 slide-up">
             <KineticHeadline 
               lines={["OUR LEADERSHIP"]} 
               className="text-3xl sm:text-4xl font-black uppercase font-headline text-[#0b1f3a] mb-4"
@@ -140,7 +140,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 lg:py-24 bg-[#0b1f3a] text-white text-center px-6">
+      <section className="py-20 lg:py-24 bg-[#0b1f3a] text-white text-center px-6 overflow-hidden">
         <div className="container mx-auto">
           <KineticHeadline 
             lines={["SECURE YOUR", "FUTURE TODAY"]} 

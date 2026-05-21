@@ -6,7 +6,7 @@ import { KineticHeadline } from "@/components/KineticHeadline"
 import { InkFlowText } from "@/components/InkFlowText"
 import { MagneticButton } from "@/components/MagneticButton"
 import { ImageReveal } from "@/components/ImageReveal"
-import { cn } from "@/lib/utils"
+import { cn } from "@/utils"
 
 const products = [
   {
@@ -64,11 +64,11 @@ export default function ProductsPage() {
             "flex flex-col lg:flex-row min-h-[500px] lg:min-h-[600px]",
             i % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
           )}>
-            <div className="w-full lg:w-1/2 relative h-[350px] sm:h-[450px] lg:h-auto">
+            <div className="w-full lg:w-1/2 relative h-[350px] sm:h-[450px] lg:h-auto overflow-hidden">
               <ImageReveal 
                 src={prod.image} 
                 alt={prod.title} 
-                className="w-full h-full"
+                className="w-full h-full object-cover"
                 maskColor={prod.bgColor === "bg-[#3E3E4E]" ? "bg-[#3E3E4E]" : "bg-[#003322]"}
               />
             </div>
@@ -78,7 +78,7 @@ export default function ProductsPage() {
               prod.bgColor,
               "text-white"
             )}>
-              <div className="max-w-md space-y-6 sm:space-y-8 w-full">
+              <div className="max-w-md space-y-6 sm:space-y-8 w-full slide-up">
                 <div className="mb-4">{prod.icon}</div>
                 <KineticHeadline 
                   lines={[prod.title]} 
@@ -100,7 +100,7 @@ export default function ProductsPage() {
         </section>
       ))}
 
-      <section className="py-20 lg:py-32 bg-[#003322] text-white text-center px-6">
+      <section className="py-20 lg:py-32 bg-[#003322] text-white text-center px-6 overflow-hidden">
         <div className="container mx-auto">
           <KineticHeadline 
             lines={["NEED A CUSTOM PLAN?"]} 
