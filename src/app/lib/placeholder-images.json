@@ -1,4 +1,3 @@
-
 {
   "placeholderImages": [
     {
@@ -42,6 +41,12 @@
       "description": "SACCO members in a community meeting",
       "imageUrl": "https://picsum.photos/seed/sacco-group/800/600",
       "imageHint": "community meeting"
+    },
+    {
+      "id": "kampala-market",
+      "description": "Nakasero Market Kampala - Supporting local commerce",
+      "imageUrl": "https://www.4x4uganda.com/wp-content/uploads/2023/01/Nakasero-Market-Kampala.jpg",
+      "imageHint": "kampala market"
     }
   ]
 }

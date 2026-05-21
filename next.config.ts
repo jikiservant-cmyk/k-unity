@@ -28,6 +28,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.4x4uganda.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };

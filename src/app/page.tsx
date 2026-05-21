@@ -18,6 +18,7 @@ import {
 const heroImages = [
   { src: "/images/IMG_8930.JPG", alt: "K-unity Vision" },
   { src: "/images/IMG_8919.jpg", alt: "Kololo Heritage" },
+  { src: "https://www.4x4uganda.com/wp-content/uploads/2023/01/Nakasero-Market-Kampala.jpg", alt: "Nakasero Market Kampala" },
   { src: "https://picsum.photos/seed/sacco-biz/1200/800", alt: "Business Growth" },
   { src: "https://picsum.photos/seed/sacco-agri/1200/800", alt: "Agri-Business Support" }
 ];
