@@ -12,7 +12,7 @@ const products = [
   {
     title: "BUSINESS LOANS",
     description: "Scale your enterprise with our low-interest business credit. We provide flexible repayment plans tailored to your cash flow cycles.",
-    image: "https://media.licdn.com/dms/image/v2/D4D12AQHfVo1p5cGcag/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1713929793032?e=2147483647&v=beta&t=q_qaJdYmlc5QVwX6OpBhxk2S1vpkdq1nNi-59odRW-A",
+    image: "https://www.dhl.com/discover/adobe/dynamicmedia/deliver/dm-aid--5f9319da-2ace-494a-ad36-3cb6eff624bb/streamlining-delivery-and-logistics.jpg?width=1400&preferwebp=true&quality=82",
     icon: <Briefcase className="h-8 w-8 sm:h-10 sm:w-10 text-[#FFB800]" />,
     bgColor: "bg-[#3E3E4E]",
     btnClass: "bg-[#FFB800] text-[#3E3E4E]"
