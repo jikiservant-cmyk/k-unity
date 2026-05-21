@@ -12,7 +12,6 @@ const navLinks = [
   { name: "About", href: "/about" },
   { name: "Loan Products", href: "/sermons" },
   { name: "Savings", href: "/savings" },
-  { name: "AI Advisor", href: "/scripture-finder" },
   { name: "Contact", href: "/contact" },
 ]
 

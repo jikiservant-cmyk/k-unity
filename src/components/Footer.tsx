@@ -23,7 +23,7 @@ export function Footer() {
           <div>
             <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-white mb-8">Services</h4>
             <ul className="space-y-4 text-sm font-light">
-              <li><Link href="/podcast" className="hover:text-[#c9922a] transition-colors">Savings Accounts</Link></li>
+              <li><Link href="/savings" className="hover:text-[#c9922a] transition-colors">Savings Accounts</Link></li>
               <li><Link href="/sermons" className="hover:text-[#c9922a] transition-colors">Personal Loans</Link></li>
               <li><Link href="/sermons" className="hover:text-[#c9922a] transition-colors">Business Loans</Link></li>
               <li><Link href="/sermons" className="hover:text-[#c9922a] transition-colors">School Fees Loan</Link></li>
@@ -36,8 +36,8 @@ export function Footer() {
             <ul className="space-y-4 text-sm font-light">
               <li><Link href="/about" className="hover:text-[#c9922a] transition-colors">About Us</Link></li>
               <li><Link href="/contact" className="hover:text-[#c9922a] transition-colors">Visit Our Office</Link></li>
-              <li><Link href="/scripture-finder" className="hover:text-[#c9922a] transition-colors">Financial Advisor</Link></li>
-              <li><Link href="/donate" className="hover:text-[#c9922a] transition-colors">Apply Online</Link></li>
+              <li><Link href="/savings" className="hover:text-[#c9922a] transition-colors">Savings Plans</Link></li>
+              <li><Link href="/contact" className="hover:text-[#c9922a] transition-colors">Apply Online</Link></li>
             </ul>
           </div>
 
