@@ -39,7 +39,7 @@ export default function AboutPage() {
           <div 
             className="fixed inset-0 w-full h-full bg-center bg-cover -z-10 brightness-[0.25]"
             style={{
-              backgroundImage: `url(https://www.4x4uganda.com/wp-content/uploads/2023/01/Nakasero-Market-Kampala.jpg)`,
+              backgroundImage: `url(https://mulengeranews.com/wp-content/uploads/2026/03/20260316_141702-750x422.jpg)`,
             }}
           />
         </div>
