@@ -46,20 +46,13 @@ const products = [
 export default function ProductsPage() {
   return (
     <div className="flex flex-col w-full">
-      <section className="relative h-[40vh] sm:h-[50vh] lg:h-[60vh] w-full overflow-hidden flex items-center justify-center bg-[#1A1A1A]">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none" style={{ clipPath: 'inset(0)' }}>
-          <div 
-            className="fixed inset-0 w-full h-full bg-center bg-cover -z-10 brightness-[0.25]"
-            style={{
-              backgroundImage: `url(https://www.4x4uganda.com/wp-content/uploads/2023/01/Nakasero-Market-Kampala.jpg)`,
-            }}
-          />
-        </div>
+      <section className="relative h-[40vh] sm:h-[50vh] lg:h-[60vh] w-full overflow-hidden flex items-center justify-center bg-[#0b1f3a]">
+        <div className="absolute inset-0 bg-grid-lines opacity-10 pointer-events-none" />
         
         <div className="container mx-auto px-6 relative z-10 text-center">
           <KineticHeadline 
             lines={["OUR LOAN", "PRODUCTS"]} 
-            className="text-4xl sm:text-7xl lg:text-[10rem] font-black uppercase tracking-tighter leading-[0.85] font-headline text-[#FFB800]"
+            className="text-4xl sm:text-7xl lg:text-[10rem] font-black uppercase tracking-tighter leading-[0.85] font-headline text-[#c9922a]"
             staggerDelay={0.2}
           />
         </div>
