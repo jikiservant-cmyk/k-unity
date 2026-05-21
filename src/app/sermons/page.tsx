@@ -71,7 +71,7 @@ export default function ProductsPage() {
             "flex flex-col lg:flex-row min-h-[500px] lg:min-h-[600px]",
             i % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
           )}>
-            <div className="w-full lg:w-1/2 relative min-h-[300px] sm:min-h-[400px] lg:min-h-full">
+            <div className="w-full lg:w-1/2 relative h-[350px] sm:h-[450px] lg:h-auto">
               <ImageReveal 
                 src={prod.image} 
                 alt={prod.title} 

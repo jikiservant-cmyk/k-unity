@@ -31,14 +31,22 @@ export function ImageReveal({
           observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.05 } // Trigger earlier to ensure images show up quickly
+      { threshold: 0.01, rootMargin: '50px' } // Trigger earlier with zero-ish threshold and margin
     );
 
     if (containerRef.current) {
       observer.observe(containerRef.current);
     }
 
-    return () => observer.disconnect();
+    // Fallback in case observer fails or takes too long
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 2000);
+
+    return () => {
+      observer.disconnect();
+      clearTimeout(timer);
+    };
   }, []);
 
   return (
@@ -46,7 +54,7 @@ export function ImageReveal({
       ref={containerRef}
       className={cn('relative overflow-hidden group w-full h-full', className)}
     >
-      {/* The stationary image - Using native img for best compatibility with external URLs */}
+      {/* The stationary image */}
       <img
         src={src}
         alt={alt}
