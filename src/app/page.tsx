@@ -16,11 +16,11 @@ import {
 } from "@/components/ui/carousel"
 
 const heroImages = [
-  { src: "/images/IMG_8930.JPG", alt: "K-unity Vision" },
-  { src: "/images/IMG_8919.jpg", alt: "Kololo Heritage" },
   { src: "https://www.4x4uganda.com/wp-content/uploads/2023/01/Nakasero-Market-Kampala.jpg", alt: "Nakasero Market Kampala" },
-  { src: "https://picsum.photos/seed/sacco-biz/1200/800", alt: "Business Growth" },
-  { src: "https://picsum.photos/seed/sacco-agri/1200/800", alt: "Agri-Business Support" }
+  { src: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&q=80&w=1200", alt: "Community Growth" },
+  { src: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=1200", alt: "Financial Success" },
+  { src: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&q=80&w=1200", alt: "Savings & Prosperity" },
+  { src: "https://images.unsplash.com/photo-1454165833767-027ffea9e7a7?auto=format&fit=crop&q=80&w=1200", alt: "Business Support" }
 ];
 
 export default function Home() {
@@ -44,17 +44,16 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_40%,rgba(201,146,42,0.15),transparent_55%)]" />
         
         {/* Hero Slider Background */}
-        <div className="absolute right-0 top-0 w-full lg:w-1/2 h-full opacity-30 lg:opacity-100 mix-blend-overlay lg:mix-blend-normal overflow-hidden">
+        <div className="absolute right-0 top-0 w-full lg:w-1/2 h-full opacity-40 lg:opacity-100 overflow-hidden">
           <Carousel setApi={setApi} opts={{ loop: true, duration: 45 }} className="w-full h-full">
-            <CarouselContent className="h-full">
+            <CarouselContent className="h-full ml-0">
               {heroImages.map((image, index) => (
-                <CarouselItem key={index} className="h-full">
+                <CarouselItem key={index} className="h-full pl-0">
                   <div className="relative w-full h-full">
-                    <ImageReveal 
+                    <img 
                       src={image.src} 
                       alt={image.alt} 
-                      className="w-full h-full object-cover"
-                      maskColor="bg-[#0b1f3a]"
+                      className="w-full h-full object-cover brightness-[0.6] lg:brightness-[0.8]"
                     />
                   </div>
                 </CarouselItem>
@@ -76,7 +75,7 @@ export default function Home() {
               staggerDelay={0.1}
             />
             
-            <InkFlowText className="text-white/60 text-base md:text-xl font-body max-w-lg mb-12 font-light leading-relaxed">
+            <InkFlowText className="text-white/80 text-base md:text-xl font-body max-w-lg mb-12 font-light leading-relaxed">
               Originating from Kololo High School, K-unity Finance SACCO empowers members with transparent savings and affordable credit.
             </InkFlowText>
             
@@ -89,7 +88,7 @@ export default function Home() {
                 </Link>
               </MagneticButton>
               <Link href="/sermons">
-                <Button variant="outline" className="bg-transparent border-white/20 text-white/80 hover:bg-white/5 h-14 sm:h-16 px-8 rounded-[8px] text-base font-light">
+                <Button variant="outline" className="bg-transparent border-white/20 text-white hover:bg-white/10 h-14 sm:h-16 px-8 rounded-[8px] text-base font-light">
                   Explore Services
                 </Button>
               </Link>
