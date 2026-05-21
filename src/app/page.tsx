@@ -1,6 +1,6 @@
 'use client';
 
-import React from "react"
+import React, { useEffect, useState } from "react"
 import Link from "next/link"
 import { ShieldCheck, ArrowRight, PiggyBank, Banknote, Building2, School, TrendingUp, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -8,8 +8,33 @@ import { KineticHeadline } from "@/components/KineticHeadline"
 import { MagneticButton } from "@/components/MagneticButton"
 import { InkFlowText } from "@/components/InkFlowText"
 import { ImageReveal } from "@/components/ImageReveal"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  type CarouselApi,
+} from "@/components/ui/carousel"
+
+const heroImages = [
+  { src: "/images/IMG_8930.JPG", alt: "K-unity Vision" },
+  { src: "/images/IMG_8919.jpg", alt: "Kololo Heritage" },
+  { src: "https://picsum.photos/seed/sacco-biz/1200/800", alt: "Business Growth" },
+  { src: "https://picsum.photos/seed/sacco-agri/1200/800", alt: "Agri-Business Support" }
+];
 
 export default function Home() {
+  const [api, setApi] = useState<CarouselApi>();
+
+  useEffect(() => {
+    if (!api) return;
+
+    const intervalId = setInterval(() => {
+      api.scrollNext();
+    }, 5000);
+
+    return () => clearInterval(intervalId);
+  }, [api]);
+
   return (
     <div className="flex flex-col w-full relative">
       {/* 1. HERO SECTION */}
@@ -17,14 +42,24 @@ export default function Home() {
         <div className="absolute inset-0 bg-grid-lines opacity-20" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_40%,rgba(201,146,42,0.15),transparent_55%)]" />
         
-        {/* Hero Image Background */}
+        {/* Hero Slider Background */}
         <div className="absolute right-0 top-0 w-full lg:w-1/2 h-full opacity-30 lg:opacity-100 mix-blend-overlay lg:mix-blend-normal overflow-hidden">
-           <ImageReveal 
-            src="/images/IMG_8930.JPG" 
-            alt="K-unity Vision" 
-            className="w-full h-full object-cover"
-            maskColor="bg-[#0b1f3a]"
-          />
+          <Carousel setApi={setApi} opts={{ loop: true, duration: 45 }} className="w-full h-full">
+            <CarouselContent className="h-full">
+              {heroImages.map((image, index) => (
+                <CarouselItem key={index} className="h-full">
+                  <div className="relative w-full h-full">
+                    <ImageReveal 
+                      src={image.src} 
+                      alt={image.alt} 
+                      className="w-full h-full object-cover"
+                      maskColor="bg-[#0b1f3a]"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
         </div>
 
         <div className="container mx-auto relative z-10 py-20 lg:py-0">
