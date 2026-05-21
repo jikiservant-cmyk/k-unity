@@ -40,11 +40,8 @@ export default function Home() {
     <div className="flex flex-col w-full relative">
       {/* 1. HERO SECTION */}
       <section className="relative min-h-[90vh] lg:min-h-[95vh] flex items-center bg-[#0b1f3a] overflow-hidden px-6 lg:px-[6%]">
-        <div className="absolute inset-0 bg-grid-lines opacity-20" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_40%,rgba(201,146,42,0.15),transparent_55%)]" />
-        
-        {/* Hero Slider Background */}
-        <div className="absolute right-0 top-0 w-full lg:w-1/2 h-full opacity-40 lg:opacity-100 overflow-hidden">
+        {/* Full-width Slider Background */}
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
           <Carousel setApi={setApi} opts={{ loop: true, duration: 45 }} className="w-full h-full">
             <CarouselContent className="h-full ml-0">
               {heroImages.map((image, index) => (
@@ -53,15 +50,19 @@ export default function Home() {
                     <img 
                       src={image.src} 
                       alt={image.alt} 
-                      className="w-full h-full object-cover brightness-[0.6] lg:brightness-[0.8]"
+                      className="w-full h-full object-cover brightness-[0.35]"
                     />
                   </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
           </Carousel>
+          {/* Subtle gradient overlay for readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0b1f3a]/80 to-transparent z-[1]" />
         </div>
 
+        <div className="absolute inset-0 bg-grid-lines opacity-10 pointer-events-none" />
+        
         <div className="container mx-auto relative z-10 py-20 lg:py-0">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-[#c9922a]/20 border border-[#c9922a]/50 px-4 py-1.5 rounded-full mb-8 slide-up">
@@ -75,7 +76,7 @@ export default function Home() {
               staggerDelay={0.1}
             />
             
-            <InkFlowText className="text-white/80 text-base md:text-xl font-body max-w-lg mb-12 font-light leading-relaxed">
+            <InkFlowText className="text-white/90 text-base md:text-xl font-body max-w-lg mb-12 font-light leading-relaxed">
               Originating from Kololo High School, K-unity Finance SACCO empowers members with transparent savings and affordable credit.
             </InkFlowText>
             
@@ -97,7 +98,7 @@ export default function Home() {
         </div>
 
         {/* Stats Section Overlay */}
-        <div className="absolute left-[6%] bottom-10 lg:bottom-20 hidden md:flex gap-10 lg:gap-16 slide-up" style={{ animationDelay: '0.6s' }}>
+        <div className="absolute left-[6%] bottom-10 lg:bottom-20 hidden md:flex gap-10 lg:gap-16 z-20 slide-up" style={{ animationDelay: '0.6s' }}>
           <div>
             <div className="text-3xl lg:text-4xl font-serif text-white font-semibold">12<span className="text-[#c9922a]">K+</span></div>
             <div className="text-[10px] lg:text-[12px] text-white/40 uppercase tracking-widest mt-2">Active Members</div>
