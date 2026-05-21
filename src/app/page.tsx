@@ -127,7 +127,7 @@ export default function Home() {
               </InkFlowText>
               <div className="relative aspect-video rounded-2xl overflow-hidden shadow-lg mt-8">
                 <ImageReveal 
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReXHwcVGLPFUxUSrF6ByiOgC_4yDmET3Va0w&s" 
+                  src="https://i.guim.co.uk/img/media/3a20af1c6e55372aab2693c0ee8d615b52e7343a/0_484_2000_1467/master/2000.jpg?width=620&dpr=1&s=none&crop=none" 
                   alt="Kololo Heritage" 
                   className="w-full h-full"
                   maskColor="bg-[#faf8f3]"
