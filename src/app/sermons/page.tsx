@@ -28,7 +28,7 @@ const products = [
   {
     title: "SCHOOL FEES LOAN",
     description: "Invest in your children's future without the stress. Our education loans are processed quickly to meet school opening deadlines.",
-    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=800",
+    image: "https://blog.lendsqr.com/wp-content/uploads/2025/05/How-to-get-a-student-loan-in-Uganda.webp",
     icon: <GraduationCap className="h-8 w-8 sm:h-10 sm:w-10 text-[#FFB800]" />,
     bgColor: "bg-[#3E3E4E]",
     btnClass: "bg-[#FFB800] text-[#3E3E4E]"
