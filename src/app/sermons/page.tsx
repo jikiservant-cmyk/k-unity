@@ -49,9 +49,9 @@ export default function ProductsPage() {
       <section className="relative h-[40vh] sm:h-[50vh] lg:h-[60vh] w-full overflow-hidden flex items-center justify-center bg-[#1A1A1A]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none" style={{ clipPath: 'inset(0)' }}>
           <div 
-            className="fixed inset-0 w-full h-full bg-center bg-cover -z-10 brightness-[0.3]"
+            className="fixed inset-0 w-full h-full bg-center bg-cover -z-10 brightness-[0.25]"
             style={{
-              backgroundImage: `url(https://images.unsplash.com/photo-1580519542036-c47de6196ba5?auto=format&fit=crop&q=80&w=1920)`,
+              backgroundImage: `url(https://www.4x4uganda.com/wp-content/uploads/2023/01/Nakasero-Market-Kampala.jpg)`,
             }}
           />
         </div>

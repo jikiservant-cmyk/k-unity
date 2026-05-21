@@ -35,9 +35,9 @@ export default function ContactPage() {
       <section className="relative h-[40vh] w-full overflow-hidden flex items-center justify-center bg-[#0b1f3a]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none" style={{ clipPath: 'inset(0)' }}>
           <div 
-            className="fixed inset-0 w-full h-full bg-center bg-cover -z-10 brightness-[0.3]"
+            className="fixed inset-0 w-full h-full bg-center bg-cover -z-10 brightness-[0.25]"
             style={{
-              backgroundImage: `url(https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920&h=1080)`,
+              backgroundImage: `url(https://www.4x4uganda.com/wp-content/uploads/2023/01/Nakasero-Market-Kampala.jpg)`,
             }}
           />
         </div>
@@ -176,7 +176,7 @@ export default function ContactPage() {
       <section className="h-[50vh] w-full bg-[#f0ece2] relative group overflow-hidden">
         <div 
           className="absolute inset-0 brightness-90 transition-all duration-1000 bg-center bg-cover"
-          style={{ backgroundImage: `url(https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1920&h=1080)` }}
+          style={{ backgroundImage: `url(https://www.4x4uganda.com/wp-content/uploads/2023/01/Nakasero-Market-Kampala.jpg)` }}
         />
         <div className="absolute inset-0 bg-[#0b1f3a]/40 group-hover:bg-transparent transition-all duration-1000 flex items-center justify-center">
           <div className="bg-white p-8 shadow-2xl space-y-2 text-center border-t-4 border-[#c9922a]">

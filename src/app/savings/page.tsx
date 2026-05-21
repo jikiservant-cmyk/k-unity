@@ -50,8 +50,8 @@ export default function SavingsPage() {
           <BlurFocusText className="relative aspect-square w-full max-w-md">
              <div className="absolute inset-0 bg-[#c9922a]/20 blur-3xl rounded-full scale-110 opacity-30 animate-pulse" />
              <ImageReveal 
-              src="https://picsum.photos/seed/k-save-hero/800/800" 
-              alt="Wealth Building" 
+              src="https://www.4x4uganda.com/wp-content/uploads/2023/01/Nakasero-Market-Kampala.jpg" 
+              alt="Local Market Prosperity" 
               className="w-full h-full shadow-2xl rounded-[16px]"
               maskColor="bg-[#0b1f3a]"
             />
@@ -78,7 +78,7 @@ export default function SavingsPage() {
           <div className="flex items-center space-x-6 sm:space-x-8">
             <MagneticButton strength={30}>
               <button className="bg-[#c9922a] text-white w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center shadow-lg group hover:scale-110 transition-transform">
-                <PiggyBank className="h-8 w-8 sm:h-10 sm:w-10 group-hover:scale-110 transition-transform" />
+                <PiggyBank className="h-8 w-8 sm:h-10 sm:w-10 transition-transform" />
               </button>
             </MagneticButton>
             <div className="space-y-1">
@@ -146,7 +146,7 @@ export default function SavingsPage() {
                   <ImageReveal 
                     src={plan.image} 
                     alt={plan.title} 
-                    className="w-full h-full object-cover brightness-90 transition-all duration-700 rounded-2xl shadow-lg"
+                    className="w-full h-full object-cover transition-all duration-700 rounded-2xl shadow-lg"
                     maskColor="bg-[#0b1f3a]"
                   />
                 </div>

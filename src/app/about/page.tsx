@@ -37,9 +37,9 @@ export default function AboutPage() {
       <section className="relative h-[50vh] lg:h-[70vh] w-full overflow-hidden flex items-center justify-center bg-[#0b1f3a]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none" style={{ clipPath: 'inset(0)' }}>
           <div 
-            className="fixed inset-0 w-full h-full bg-center bg-cover -z-10 brightness-[0.3]"
+            className="fixed inset-0 w-full h-full bg-center bg-cover -z-10 brightness-[0.25]"
             style={{
-              backgroundImage: `url(https://images.unsplash.com/photo-1579621970795-87faff2f9050?auto=format&fit=crop&q=80&w=1920&h=1080)`,
+              backgroundImage: `url(https://www.4x4uganda.com/wp-content/uploads/2023/01/Nakasero-Market-Kampala.jpg)`,
             }}
           />
         </div>
@@ -125,7 +125,7 @@ export default function AboutPage() {
                   <ImageReveal 
                     src={member.image} 
                     alt={member.name} 
-                    className="w-full h-full brightness-95 transition-all duration-700"
+                    className="w-full h-full transition-all duration-700"
                     maskColor="bg-[#c9922a]"
                   />
                 </div>
