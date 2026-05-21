@@ -40,23 +40,23 @@ export function Navbar() {
         ? "bg-[#0b1f3a]/90 border-[#c9922a]/10 h-[64px]" 
         : "bg-[#0b1f3a]/95 border-[#c9922a]/20 h-[72px]"
     )}>
-      <nav className="container mx-auto px-6 lg:px-12 h-full">
+      <nav className="container mx-auto px-4 sm:px-6 lg:px-12 h-full">
         <div className="flex h-full items-center justify-between">
-          <div className="flex items-center">
-            <Link href="/" className="flex items-center group">
+          <div className="flex items-center min-w-0">
+            <Link href="/" className="flex items-center group shrink-0">
               <img 
                 src="/images/Adobe Express - file.png" 
                 alt="K-unity Logo" 
                 className={cn(
                   "transition-all duration-500 object-contain",
-                  isScrolled ? "h-8" : "h-10"
+                  isScrolled ? "h-8" : "h-9 sm:h-10"
                 )}
               />
               <span className={cn(
                 "font-serif text-white tracking-tight leading-tight transition-all duration-500 ease-in-out overflow-hidden whitespace-nowrap",
                 isScrolled 
                   ? "max-w-0 opacity-0 ml-0" 
-                  : "max-w-[400px] opacity-100 ml-3 text-xl sm:text-2xl"
+                  : "max-w-[300px] sm:max-w-[400px] opacity-100 ml-2 sm:ml-3 text-lg sm:text-2xl"
               )}>
                 K-unity <span className="text-[#c9922a]">Finance SACCO</span>
               </span>
@@ -81,23 +81,25 @@ export function Navbar() {
             </div>
           </div>
 
-          <div className="hidden md:flex items-center">
-            <Link href="/contact">
-              <Button className={cn(
-                "bg-[#c9922a] hover:bg-[#e8b455] text-white border-none rounded-[6px] font-medium transition-all",
-                isScrolled ? "px-5 h-9 text-xs" : "px-6 h-10 text-sm"
-              )}>
-                Join Today
-              </Button>
-            </Link>
+          <div className="flex items-center space-x-4">
+            <div className="hidden md:flex items-center">
+              <Link href="/contact">
+                <Button className={cn(
+                  "bg-[#c9922a] hover:bg-[#e8b455] text-white border-none rounded-[6px] font-medium transition-all",
+                  isScrolled ? "px-5 h-9 text-xs" : "px-6 h-10 text-sm"
+                )}>
+                  Join Today
+                </Button>
+              </Link>
+            </div>
+            
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="md:hidden p-2 text-white shrink-0"
+            >
+              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
           </div>
-          
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-white"
-          >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
         </div>
       </nav>
 
