@@ -1,3 +1,4 @@
+
 'use client';
 
 import Image from "next/image"
@@ -34,7 +35,7 @@ const leadership = [
 export default function AboutPage() {
   return (
     <div className="flex flex-col w-full">
-      <section className="relative h-[70vh] w-full overflow-hidden flex items-center justify-center bg-[#1A1A1A]">
+      <section className="relative h-[70vh] w-full overflow-hidden flex items-center justify-center bg-[#0b1f3a]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none" style={{ clipPath: 'inset(0)' }}>
           <div 
             className="fixed inset-0 w-full h-full bg-center bg-cover -z-10 grayscale brightness-[0.3]"
@@ -47,17 +48,17 @@ export default function AboutPage() {
         <div className="container mx-auto px-6 relative z-10 text-center">
           <KineticHeadline 
             lines={["ABOUT K-UNITY", "FINANCE SACCO"]} 
-            className="text-7xl md:text-[8rem] font-black uppercase tracking-tighter leading-[0.85] font-serif text-[#FFB800]"
+            className="text-7xl md:text-[8rem] font-black uppercase tracking-tighter leading-[0.85] font-serif text-[#c9922a]"
             staggerDelay={0.2}
           />
         </div>
       </section>
 
-      <section className="py-32 bg-[#003322] text-white">
+      <section className="py-32 bg-[#0b1f3a] text-white">
         <div className="container mx-auto px-6 md:px-12">
           <div className="max-w-4xl mx-auto text-center space-y-12">
             <BlurFocusText>
-              <h2 className="text-[#FFB800] text-3xl md:text-5xl font-black uppercase font-serif tracking-tight">
+              <h2 className="text-[#c9922a] text-3xl md:text-5xl font-black uppercase font-serif tracking-tight">
                 Roots in Excellence
               </h2>
             </BlurFocusText>
@@ -71,25 +72,25 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-24 bg-white text-[#2D2B44]">
+      <section className="py-24 bg-white text-[#0b1f3a]">
         <div className="container mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <KineticHeadline 
                 lines={["A LEGACY OF", "FINANCIAL UNITY"]} 
-                className="text-4xl md:text-6xl font-black uppercase font-headline tracking-tighter text-[#2D2B44]"
+                className="text-4xl md:text-6xl font-black uppercase font-headline tracking-tighter text-[#0b1f3a]"
               />
-              <Separator className="bg-[#2D2B44]/10 w-32 h-[2px]" />
+              <Separator className="bg-[#0b1f3a]/10 w-32 h-[2px]" />
               <InkFlowText className="text-muted-foreground text-lg leading-relaxed font-body">
                 K-unity Finance SACCO was established by the alumni and community of Kololo High School. What began as a small savings group has evolved into a premier financial institution serving thousands across Uganda.
               </InkFlowText>
               <div className="grid grid-cols-2 gap-8 pt-4">
                 <div className="space-y-2">
-                  <span className="text-4xl font-black text-[#FFB800]">20+</span>
+                  <span className="text-4xl font-black text-[#c9922a]">20+</span>
                   <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Years of Heritage</p>
                 </div>
                 <div className="space-y-2">
-                  <span className="text-4xl font-black text-[#FFB800]">12K+</span>
+                  <span className="text-4xl font-black text-[#c9922a]">12K+</span>
                   <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Active Members</p>
                 </div>
               </div>
@@ -99,18 +100,19 @@ export default function AboutPage() {
                 src="/images/IMG_8919.jpg" 
                 alt="SACCO History" 
                 className="w-full h-full grayscale hover:grayscale-0 transition-all duration-1000"
+                maskColor="bg-[#0b1f3a]"
               />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-24 bg-[#F8F8F8]">
+      <section className="py-24 bg-[#faf8f3]">
         <div className="container mx-auto px-6 md:px-12">
           <div className="text-center mb-16">
             <KineticHeadline 
               lines={["OUR LEADERSHIP"]} 
-              className="text-4xl font-black uppercase font-headline text-[#2D2B44] mb-4"
+              className="text-4xl font-black uppercase font-headline text-[#0b1f3a] mb-4"
             />
             <InkFlowText className="text-muted-foreground max-w-xl mx-auto">
               Guided by a board of directors committed to financial integrity and member empowerment.
@@ -125,11 +127,12 @@ export default function AboutPage() {
                     src={member.image} 
                     alt={member.name} 
                     className="w-full h-full grayscale brightness-95 hover:grayscale-0 transition-all duration-700"
+                    maskColor="bg-[#c9922a]"
                   />
                 </div>
                 <div className="space-y-2 text-center md:text-left">
-                  <h3 className="text-2xl font-black font-headline text-[#2D2B44] uppercase">{member.name}</h3>
-                  <p className="text-[#FFB800] font-bold uppercase tracking-widest text-xs">{member.role}</p>
+                  <h3 className="text-2xl font-black font-headline text-[#0b1f3a] uppercase">{member.name}</h3>
+                  <p className="text-[#c9922a] font-bold uppercase tracking-widest text-xs">{member.role}</p>
                   <p className="text-muted-foreground font-body text-sm leading-relaxed">{member.bio}</p>
                 </div>
               </div>
@@ -138,14 +141,14 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-24 bg-[#2D2B44] text-white text-center">
+      <section className="py-24 bg-[#0b1f3a] text-white text-center">
         <div className="container mx-auto px-6">
           <KineticHeadline 
             lines={["SECURE YOUR", "FUTURE TODAY"]} 
             className="text-4xl md:text-6xl font-black uppercase font-headline mb-8"
           />
           <MagneticButton>
-            <Button className="bg-[#FFB800] text-[#2D2B44] hover:bg-[#FFB800]/90 font-black h-16 px-10 rounded-full text-xl group">
+            <Button className="bg-[#c9922a] text-white hover:bg-[#e8b455] font-black h-16 px-10 rounded-full text-xl group">
               JOIN K-UNITY <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform" />
             </Button>
           </MagneticButton>

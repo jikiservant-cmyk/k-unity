@@ -1,3 +1,4 @@
+
 'use client';
 
 import React from "react"
@@ -8,6 +9,7 @@ import { KineticHeadline } from "@/components/KineticHeadline"
 import { MagneticButton } from "@/components/MagneticButton"
 import { InkFlowText } from "@/components/InkFlowText"
 import { BlurFocusText } from "@/components/BlurFocusText"
+import { ImageReveal } from "@/components/ImageReveal"
 
 export default function Home() {
   return (
@@ -17,6 +19,16 @@ export default function Home() {
         <div className="absolute inset-0 bg-grid-lines opacity-20" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_40%,rgba(201,146,42,0.15),transparent_55%)]" />
         
+        {/* Hero Image Background */}
+        <div className="absolute right-0 top-0 w-full lg:w-1/2 h-full opacity-40 lg:opacity-100 mix-blend-overlay lg:mix-blend-normal overflow-hidden">
+           <ImageReveal 
+            src="/images/IMG_8930.JPG" 
+            alt="K-unity Vision" 
+            className="w-full h-full object-cover"
+            maskColor="bg-[#0b1f3a]"
+          />
+        </div>
+
         <div className="container mx-auto relative z-10">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-[#c9922a]/20 border border-[#c9922a]/50 px-4 py-1.5 rounded-full mb-8 slide-up">
@@ -52,7 +64,7 @@ export default function Home() {
         </div>
 
         {/* Stats Section Overlay */}
-        <div className="absolute right-[6%] bottom-20 hidden lg:flex gap-16 slide-up" style={{ animationDelay: '0.6s' }}>
+        <div className="absolute left-[6%] bottom-20 hidden lg:flex gap-16 slide-up" style={{ animationDelay: '0.6s' }}>
           <div>
             <div className="text-4xl font-serif text-white font-semibold">12<span className="text-[#c9922a]">K+</span></div>
             <div className="text-[12px] text-white/40 uppercase tracking-widest mt-2">Active Members</div>
@@ -81,6 +93,14 @@ export default function Home() {
               <InkFlowText className="text-[#5a6070] text-lg font-light leading-relaxed max-w-lg">
                 K-unity Finance SACCO was born from the vision of Kololo High School founders. Today, we bridge the gap between education and financial stability for all Ugandans.
               </InkFlowText>
+              <div className="relative aspect-video rounded-2xl overflow-hidden shadow-lg mt-8">
+                <ImageReveal 
+                  src="/images/IMG_8919.jpg" 
+                  alt="Kololo Heritage" 
+                  className="w-full h-full"
+                  maskColor="bg-[#faf8f3]"
+                />
+              </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="bg-[#0b1f3a] p-10 rounded-[16px] text-white space-y-4">
