@@ -6,7 +6,7 @@ import { KineticHeadline } from "@/components/KineticHeadline"
 import { InkFlowText } from "@/components/InkFlowText"
 import { MagneticButton } from "@/components/MagneticButton"
 import { ImageReveal } from "@/components/ImageReveal"
-import { cn } from "@/utils"
+import { cn } from "@/lib/utils"
 
 const products = [
   {
