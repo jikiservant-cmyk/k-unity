@@ -17,25 +17,55 @@ const navLinks = [
 
 export function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false)
+  const [isScrolled, setIsScrolled] = React.useState(false)
   const pathname = usePathname()
 
+  React.useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true)
+      } else {
+        setIsScrolled(false)
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
   return (
-    <header className="w-full z-[100] sticky top-0 bg-[#0b1f3a]/95 backdrop-blur-xl border-b border-[#c9922a]/20">
-      <nav className="container mx-auto px-6 lg:px-12">
-        <div className="flex h-[72px] items-center justify-between">
+    <header className={cn(
+      "w-full z-[100] sticky top-0 transition-all duration-500 ease-in-out border-b backdrop-blur-xl",
+      isScrolled 
+        ? "bg-[#0b1f3a]/90 border-[#c9922a]/10 h-[64px]" 
+        : "bg-[#0b1f3a]/95 border-[#c9922a]/20 h-[72px]"
+    )}>
+      <nav className="container mx-auto px-6 lg:px-12 h-full">
+        <div className="flex h-full items-center justify-between">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center group gap-3">
+            <Link href="/" className="flex items-center group">
               <img 
                 src="/images/Adobe Express - file.png" 
                 alt="K-unity Logo" 
-                className="h-10 w-auto object-contain"
+                className={cn(
+                  "transition-all duration-500 object-contain",
+                  isScrolled ? "h-8" : "h-10"
+                )}
               />
-              <span className="text-xl sm:text-2xl font-serif text-white tracking-tight leading-tight">
+              <span className={cn(
+                "font-serif text-white tracking-tight leading-tight transition-all duration-500 ease-in-out overflow-hidden whitespace-nowrap",
+                isScrolled 
+                  ? "max-w-0 opacity-0 ml-0" 
+                  : "max-w-[400px] opacity-100 ml-3 text-xl sm:text-2xl"
+              )}>
                 K-unity <span className="text-[#c9922a]">Finance SACCO</span>
               </span>
             </Link>
 
-            <div className="hidden md:flex items-center ml-10 lg:ml-16 space-x-6 lg:space-x-10">
+            <div className={cn(
+              "hidden md:flex items-center transition-all duration-500",
+              isScrolled ? "ml-8 lg:ml-12 space-x-4 lg:space-x-8" : "ml-10 lg:ml-16 space-x-6 lg:space-x-10"
+            )}>
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
@@ -53,7 +83,10 @@ export function Navbar() {
 
           <div className="hidden md:flex items-center">
             <Link href="/contact">
-              <Button className="bg-[#c9922a] hover:bg-[#e8b455] text-white border-none rounded-[6px] px-6 h-10 font-medium text-sm transition-all">
+              <Button className={cn(
+                "bg-[#c9922a] hover:bg-[#e8b455] text-white border-none rounded-[6px] font-medium transition-all",
+                isScrolled ? "px-5 h-9 text-xs" : "px-6 h-10 text-sm"
+              )}>
                 Join Today
               </Button>
             </Link>
@@ -70,7 +103,7 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-[#0b1f3a] border-t border-white/5 px-6 py-8 space-y-6 absolute top-[72px] left-0 right-0 shadow-2xl">
+        <div className="md:hidden bg-[#0b1f3a] border-t border-white/5 px-6 py-8 space-y-6 absolute top-full left-0 right-0 shadow-2xl">
           {navLinks.map((link) => (
             <Link
               key={link.name}
