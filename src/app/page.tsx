@@ -53,7 +53,7 @@ export default function Home() {
                 </Link>
               </MagneticButton>
               <Link href="/sermons">
-                <Button variant="outline" className="border-white/20 text-white/80 hover:bg-white/5 h-14 sm:h-16 px-8 rounded-[8px] text-base font-light">
+                <Button variant="outline" className="bg-transparent border-white/20 text-white/80 hover:bg-white/5 h-14 sm:h-16 px-8 rounded-[8px] text-base font-light">
                   Explore Services
                 </Button>
               </Link>
