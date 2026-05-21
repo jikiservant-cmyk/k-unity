@@ -89,7 +89,7 @@ export default function AboutPage() {
                   <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Years of Heritage</p>
                 </div>
                 <div className="space-y-1 slide-up" style={{ animationDelay: '0.3s' }}>
-                  <span className="text-3xl sm:text-4xl font-black text-[#c9922a]">12K+</span>
+                  <span className="text-3xl sm:text-4xl font-black text-[#c9922a]">70+</span>
                   <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Active Members</p>
                 </div>
               </div>

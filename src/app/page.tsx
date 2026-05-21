@@ -98,11 +98,11 @@ export default function Home() {
 
         <div className="absolute left-[6%] bottom-10 lg:bottom-20 hidden md:flex gap-10 lg:gap-16 z-20 slide-up" style={{ animationDelay: '0.6s' }}>
           <div>
-            <div className="text-3xl lg:text-4xl font-serif text-white font-semibold">12<span className="text-[#c9922a]">K+</span></div>
+            <div className="text-3xl lg:text-4xl font-serif text-white font-semibold">70<span className="text-[#c9922a]">+</span></div>
             <div className="text-[10px] lg:text-[12px] text-white/40 uppercase tracking-widest mt-2">Active Members</div>
           </div>
           <div>
-            <div className="text-3xl lg:text-4xl font-serif text-white font-semibold">UGX 8<span className="text-[#c9922a]">B</span></div>
+            <div className="text-3xl lg:text-4xl font-serif text-white font-semibold">UGX 5<span className="text-[#c9922a]">M+</span></div>
             <div className="text-[10px] lg:text-[12px] text-white/40 uppercase tracking-widest mt-2">Savings Mobilized</div>
           </div>
           <div>
