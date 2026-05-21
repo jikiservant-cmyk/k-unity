@@ -20,7 +20,7 @@ const products = [
   {
     title: "AGRI-BUSINESS",
     description: "Empowering farmers with equipment loans and seasonal input financing. Boost your productivity with specialized agricultural credit.",
-    image: "https://images.unsplash.com/photo-1592982537447-6f2a6a0c7c18?auto=format&fit=crop&q=80&w=800",
+    image: "https://coffeeheads.com/wp-content/uploads/2018/04/Blog-Pic-Harvesting__1597682371_94.206.192.97.jpg",
     icon: <Tractor className="h-8 w-8 sm:h-10 sm:w-10 text-[#FFB800]" />,
     bgColor: "bg-[#003322]",
     btnClass: "border-[#FFB800] text-[#FFB800]"

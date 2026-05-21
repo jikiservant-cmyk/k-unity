@@ -64,6 +64,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'coffeeheads.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
