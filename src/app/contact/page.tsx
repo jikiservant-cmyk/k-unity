@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Mail, Phone, MapPin, Send, MessageSquare, Heart } from "lucide-react"
+import { Mail, Phone, MapPin, Send, MessageSquare, Landmark, ShieldCheck } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -24,7 +24,7 @@ export default function ContactPage() {
       setIsSubmitting(false)
       toast({
         title: "Message Sent",
-        description: "Thank you for reaching out. We will get back to you shortly.",
+        description: "Thank you for reaching out to K-unity Finance. Our advisors will contact you shortly.",
       })
     }, 1500)
   }
@@ -32,20 +32,20 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col w-full min-h-screen bg-white">
       {/* 1. Hero Section */}
-      <section className="relative h-[40vh] w-full overflow-hidden flex items-center justify-center bg-[#003322]">
+      <section className="relative h-[40vh] w-full overflow-hidden flex items-center justify-center bg-[#0b1f3a]">
         <div className="absolute inset-0 overflow-hidden pointer-events-none" style={{ clipPath: 'inset(0)' }}>
           <div 
             className="fixed inset-0 w-full h-full bg-center bg-cover -z-10 grayscale brightness-[0.3]"
             style={{
-              backgroundImage: `url(https://picsum.photos/seed/contact-hero/1920/1080)`,
+              backgroundImage: `url(https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1920&h=1080)`,
             }}
           />
         </div>
         
         <div className="container mx-auto px-6 relative z-10 text-center">
           <KineticHeadline 
-            lines={["PLAN YOUR", "VISIT"]} 
-            className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85] font-serif text-[#FFB800]"
+            lines={["VISIT OUR", "OFFICE"]} 
+            className="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85] font-serif text-[#c9922a]"
             staggerDelay={0.2}
           />
         </div>
@@ -56,12 +56,12 @@ export default function ContactPage() {
         <div className="container mx-auto px-6 md:px-12 max-w-6xl">
           <div className="text-center mb-20 space-y-6">
             <KineticHeadline 
-              lines={["WE'RE HERE FOR YOU"]} 
-              className="text-4xl md:text-5xl font-black text-[#2D2B44] uppercase font-headline"
+              lines={["WE'RE HERE TO HELP"]} 
+              className="text-4xl md:text-5xl font-black text-[#0b1f3a] uppercase font-headline"
             />
             <InkFlowText className="text-muted-foreground text-xl font-body max-w-2xl mx-auto leading-relaxed">
-              Have a question about our services, or need someone to stand with you in prayer? 
-              Reach out and let us know how we can support you.
+              Have a question about our financial products, or need a customized savings plan? 
+              Reach out and let our expert advisors guide you toward financial freedom.
             </InkFlowText>
           </div>
 
@@ -69,45 +69,45 @@ export default function ContactPage() {
             {/* Contact Info Sidebar */}
             <div className="space-y-12">
               <div className="space-y-8">
-                <span className="text-[#FFB800] font-black tracking-[0.4em] text-xs uppercase block">Information</span>
+                <span className="text-[#c9922a] font-black tracking-[0.4em] text-xs uppercase block">Information</span>
                 
                 <div className="flex items-start space-x-6 group">
-                  <div className="bg-[#F8F8F8] p-4 rounded-sm transition-transform group-hover:scale-110 duration-500">
-                    <MapPin className="h-6 w-6 text-[#FFB800]" />
+                  <div className="bg-[#faf8f3] p-4 rounded-sm transition-transform group-hover:scale-110 duration-500">
+                    <MapPin className="h-6 w-6 text-[#c9922a]" />
                   </div>
                   <div className="space-y-1">
-                    <h3 className="text-lg font-bold text-[#2D2B44] uppercase tracking-wide">Location</h3>
-                    <p className="text-muted-foreground font-body">Nabweru Christian Fellowship Church, 9GGV+56F, Nabweru Rd, Kampala</p>
+                    <h3 className="text-lg font-bold text-[#0b1f3a] uppercase tracking-wide">Location</h3>
+                    <p className="text-muted-foreground font-body text-sm">Kololo High School Area, Near Nabweru Rd, Kampala, Uganda</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-6 group">
-                  <div className="bg-[#F8F8F8] p-4 rounded-sm transition-transform group-hover:scale-110 duration-500">
-                    <Phone className="h-6 w-6 text-[#FFB800]" />
+                  <div className="bg-[#faf8f3] p-4 rounded-sm transition-transform group-hover:scale-110 duration-500">
+                    <Phone className="h-6 w-6 text-[#c9922a]" />
                   </div>
                   <div className="space-y-1">
-                    <h3 className="text-lg font-bold text-[#2D2B44] uppercase tracking-wide">Phone</h3>
-                    <p className="text-muted-foreground font-body">(555) 123-4567</p>
+                    <h3 className="text-lg font-bold text-[#0b1f3a] uppercase tracking-wide">Phone</h3>
+                    <p className="text-muted-foreground font-body text-sm">(+256) 763 019052</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-6 group">
-                  <div className="bg-[#F8F8F8] p-4 rounded-sm transition-transform group-hover:scale-110 duration-500">
-                    <Mail className="h-6 w-6 text-[#FFB800]" />
+                  <div className="bg-[#faf8f3] p-4 rounded-sm transition-transform group-hover:scale-110 duration-500">
+                    <Mail className="h-6 w-6 text-[#c9922a]" />
                   </div>
                   <div className="space-y-1">
-                    <h3 className="text-lg font-bold text-[#2D2B44] uppercase tracking-wide">Email</h3>
-                    <p className="text-muted-foreground font-body">hello@ncfchurch.org</p>
+                    <h3 className="text-lg font-bold text-[#0b1f3a] uppercase tracking-wide">Email</h3>
+                    <p className="text-muted-foreground font-body text-sm">info@k-unitysacco.co.ug</p>
                   </div>
                 </div>
               </div>
 
-              <div className="p-10 bg-[#3E3E4E] text-white space-y-6 rounded-sm shadow-xl">
-                <Heart className="h-10 w-10 text-[#FFB800]" />
-                <h3 className="text-2xl font-black uppercase font-headline">Prayer Support</h3>
+              <div className="p-10 bg-[#0b1f3a] text-white space-y-6 rounded-sm shadow-xl border-l-4 border-[#c9922a]">
+                <ShieldCheck className="h-10 w-10 text-[#c9922a]" />
+                <h3 className="text-2xl font-black uppercase font-headline">Member Support</h3>
                 <InkFlowText delay={1} className="text-white/70 font-body leading-relaxed text-sm">
-                  Our dedicated prayer team meets weekly to lift up your requests. 
-                  Every message is handled with the utmost care and confidentiality.
+                  Our dedicated support team is here to help you manage your shares and savings. 
+                  We prioritize transparency and professional cooperative standards.
                 </InkFlowText>
               </div>
             </div>
@@ -117,45 +117,49 @@ export default function ContactPage() {
               <form onSubmit={handleSubmit} className="space-y-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="space-y-3">
-                    <Label htmlFor="first-name" className="text-xs font-black uppercase tracking-widest text-[#2D2B44]/50">First Name</Label>
-                    <Input id="first-name" placeholder="John" required className="h-14 bg-[#F8F8F8] border-none rounded-none focus-visible:ring-1 focus-visible:ring-[#FFB800] placeholder:text-gray-300" />
+                    <Label htmlFor="first-name" className="text-xs font-black uppercase tracking-widest text-[#0b1f3a]/50">First Name</Label>
+                    <Input id="first-name" placeholder="John" required className="h-14 bg-[#faf8f3] border-none rounded-none focus-visible:ring-1 focus-visible:ring-[#c9922a] placeholder:text-gray-300" />
                   </div>
                   <div className="space-y-3">
-                    <Label htmlFor="last-name" className="text-xs font-black uppercase tracking-widest text-[#2D2B44]/50">Last Name</Label>
-                    <Input id="last-name" placeholder="Doe" required className="h-14 bg-[#F8F8F8] border-none rounded-none focus-visible:ring-1 focus-visible:ring-[#FFB800] placeholder:text-gray-300" />
+                    <Label htmlFor="last-name" className="text-xs font-black uppercase tracking-widest text-[#0b1f3a]/50">Last Name</Label>
+                    <Input id="last-name" placeholder="Doe" required className="h-14 bg-[#faf8f3] border-none rounded-none focus-visible:ring-1 focus-visible:ring-[#c9922a] placeholder:text-gray-300" />
                   </div>
                 </div>
 
                 <div className="space-y-3">
-                  <Label htmlFor="email" className="text-xs font-black uppercase tracking-widest text-[#2D2B44]/50">Email Address</Label>
-                  <Input id="email" type="email" placeholder="john@example.com" required className="h-14 bg-[#F8F8F8] border-none rounded-none focus-visible:ring-1 focus-visible:ring-[#FFB800] placeholder:text-gray-300" />
+                  <Label htmlFor="email" className="text-xs font-black uppercase tracking-widest text-[#0b1f3a]/50">Email Address</Label>
+                  <Input id="email" type="email" placeholder="john@example.com" required className="h-14 bg-[#faf8f3] border-none rounded-none focus-visible:ring-1 focus-visible:ring-[#c9922a] placeholder:text-gray-300" />
                 </div>
 
                 <div className="space-y-6">
-                  <Label className="text-xs font-black uppercase tracking-widest text-[#2D2B44]/50">Reason for inquiry</Label>
+                  <Label className="text-xs font-black uppercase tracking-widest text-[#0b1f3a]/50">Reason for inquiry</Label>
                   <RadioGroup defaultValue="inquiry" className="flex flex-col sm:flex-row sm:space-x-12 space-y-4 sm:space-y-0">
                     <div className="flex items-center space-x-3 group cursor-pointer">
-                      <RadioGroupItem value="inquiry" id="r1" className="border-2 border-[#FFB800] text-[#FFB800]" />
-                      <Label htmlFor="r1" className="font-bold text-[#2D2B44] uppercase tracking-wide text-sm cursor-pointer group-hover:text-[#FFB800] transition-colors">General Inquiry</Label>
+                      <RadioGroupItem value="inquiry" id="r1" className="border-2 border-[#c9922a] text-[#c9922a]" />
+                      <Label htmlFor="r1" className="font-bold text-[#0b1f3a] uppercase tracking-wide text-sm cursor-pointer group-hover:text-[#c9922a] transition-colors">General Inquiry</Label>
                     </div>
                     <div className="flex items-center space-x-3 group cursor-pointer">
-                      <RadioGroupItem value="prayer" id="r2" className="border-2 border-[#FFB800] text-[#FFB800]" />
-                      <Label htmlFor="r2" className="font-bold text-[#2D2B44] uppercase tracking-wide text-sm cursor-pointer group-hover:text-[#FFB800] transition-colors">Prayer Request</Label>
+                      <RadioGroupItem value="loan" id="r2" className="border-2 border-[#c9922a] text-[#c9922a]" />
+                      <Label htmlFor="r2" className="font-bold text-[#0b1f3a] uppercase tracking-wide text-sm cursor-pointer group-hover:text-[#c9922a] transition-colors">Loan Application</Label>
+                    </div>
+                    <div className="flex items-center space-x-3 group cursor-pointer">
+                      <RadioGroupItem value="membership" id="r3" className="border-2 border-[#c9922a] text-[#c9922a]" />
+                      <Label htmlFor="r3" className="font-bold text-[#0b1f3a] uppercase tracking-wide text-sm cursor-pointer group-hover:text-[#c9922a] transition-colors">Membership Setup</Label>
                     </div>
                   </RadioGroup>
                 </div>
 
                 <div className="space-y-3">
-                  <Label htmlFor="message" className="text-xs font-black uppercase tracking-widest text-[#2D2B44]/50">How can we help?</Label>
-                  <Textarea id="message" placeholder="Your message here..." className="min-h-[200px] bg-[#F8F8F8] border-none rounded-none focus-visible:ring-1 focus-visible:ring-[#FFB800] placeholder:text-gray-300 p-6 text-lg resize-none" required />
+                  <Label htmlFor="message" className="text-xs font-black uppercase tracking-widest text-[#0b1f3a]/50">How can we help?</Label>
+                  <Textarea id="message" placeholder="Your inquiry here..." className="min-h-[200px] bg-[#faf8f3] border-none rounded-none focus-visible:ring-1 focus-visible:ring-[#c9922a] placeholder:text-gray-300 p-6 text-lg resize-none" required />
                 </div>
 
                 <div className="pt-4">
                   <MagneticButton strength={20} className="w-full">
-                    <Button type="submit" className="w-full h-20 text-xl font-black bg-[#FFB800] text-[#003322] hover:bg-[#FFB800]/90 rounded-none shadow-xl group" disabled={isSubmitting}>
+                    <Button type="submit" className="w-full h-20 text-xl font-black bg-[#c9922a] text-white hover:bg-[#c9922a]/90 rounded-none shadow-xl group" disabled={isSubmitting}>
                       {isSubmitting ? "SENDING..." : (
                         <span className="flex items-center justify-center">
-                          SEND MESSAGE
+                          SEND INQUIRY
                           <Send className="ml-4 h-6 w-6 group-hover:translate-x-2 transition-transform" />
                         </span>
                       )}
@@ -169,15 +173,15 @@ export default function ContactPage() {
       </section>
 
       {/* 3. Footer Map Placeholder Section */}
-      <section className="h-[50vh] w-full bg-[#F5F5F5] relative group overflow-hidden">
+      <section className="h-[50vh] w-full bg-[#f0ece2] relative group overflow-hidden">
         <div 
           className="absolute inset-0 grayscale brightness-90 group-hover:grayscale-0 transition-all duration-1000 bg-center bg-cover"
-          style={{ backgroundImage: `url(https://picsum.photos/seed/church-map/1920/1080)` }}
+          style={{ backgroundImage: `url(https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1920&h=1080)` }}
         />
-        <div className="absolute inset-0 bg-[#003322]/40 group-hover:bg-transparent transition-all duration-1000 flex items-center justify-center">
-          <div className="bg-white p-8 shadow-2xl space-y-2 text-center">
-            <h3 className="text-xl font-black uppercase font-headline">Visit Our Sanctuary</h3>
-            <p className="text-muted-foreground text-sm font-body">Open for quiet prayer Mon-Fri, 9am - 4pm</p>
+        <div className="absolute inset-0 bg-[#0b1f3a]/40 group-hover:bg-transparent transition-all duration-1000 flex items-center justify-center">
+          <div className="bg-white p-8 shadow-2xl space-y-2 text-center border-t-4 border-[#c9922a]">
+            <h3 className="text-xl font-black uppercase font-headline text-[#0b1f3a]">Our Headquarters</h3>
+            <p className="text-muted-foreground text-sm font-body">Main Office open Mon-Fri, 8:30am - 5:00pm</p>
           </div>
         </div>
       </section>
