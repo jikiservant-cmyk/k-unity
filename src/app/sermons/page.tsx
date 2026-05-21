@@ -75,7 +75,7 @@ export default function ProductsPage() {
               <ImageReveal 
                 src={prod.image} 
                 alt={prod.title} 
-                className="w-full h-full transition-all duration-1000"
+                className="w-full h-full"
                 maskColor={prod.bgColor === "bg-[#3E3E4E]" ? "bg-[#3E3E4E]" : "bg-[#003322]"}
               />
             </div>

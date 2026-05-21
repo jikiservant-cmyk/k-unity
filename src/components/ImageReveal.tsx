@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 interface ImageRevealProps {
@@ -32,7 +31,7 @@ export function ImageReveal({
           observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.05 } // Trigger earlier to ensure images show up quickly
     );
 
     if (containerRef.current) {
@@ -45,25 +44,20 @@ export function ImageReveal({
   return (
     <div
       ref={containerRef}
-      className={cn('relative overflow-hidden group', className)}
+      className={cn('relative overflow-hidden group w-full h-full', className)}
     >
-      {/* The stationary image */}
-      {width && height ? (
-        <Image
-          src={src}
-          alt={alt}
-          width={width}
-          height={height}
-          className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
-        />
-      ) : (
-        <Image
-          src={src}
-          alt={alt}
-          fill
-          className="object-cover transition-transform duration-700 group-hover:scale-105"
-        />
-      )}
+      {/* The stationary image - Using native img for best compatibility with external URLs */}
+      <img
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+        className={cn(
+          "object-cover transition-transform duration-700 group-hover:scale-105",
+          !width && !height ? "absolute inset-0 w-full h-full" : "w-full h-auto"
+        )}
+        loading="lazy"
+      />
 
       {/* The sliding mask */}
       <div
