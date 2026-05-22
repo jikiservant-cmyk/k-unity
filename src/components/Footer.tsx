@@ -1,3 +1,4 @@
+
 import Link from "next/link"
 import { Facebook, Instagram, Twitter, Youtube, MapPin, Phone, Mail } from "lucide-react"
 
@@ -7,14 +8,14 @@ export function Footer() {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-16">
           <div className="space-y-6">
-            <Link href="/" className="flex items-center gap-3">
+            <Link href="/" className="flex items-center gap-4">
               <img 
                 src="/images/Adobe Express - file.png" 
                 alt="K-unity Logo" 
-                className="h-12 w-auto object-contain brightness-110"
+                className="h-16 w-auto object-contain brightness-110"
               />
               <div className="flex flex-col">
-                <span className="text-xl font-serif text-white tracking-tight leading-none">
+                <span className="text-2xl font-serif text-white tracking-tight leading-none">
                   Youth Unity
                 </span>
                 <span className="text-[#c9922a] text-[10px] uppercase tracking-widest font-bold mt-1">
