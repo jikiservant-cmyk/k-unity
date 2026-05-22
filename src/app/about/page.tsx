@@ -15,7 +15,7 @@ const cabinet = [
     name: "SACCO Chairperson",
     role: "Presides over meetings and represents the SACCO.",
     bio: "Oversees overall SACCO activities and ensures decisions are implemented.",
-    image: "https://picsum.photos/seed/leader1/400/500"
+    image: "/images/cp kunity.jpeg"
   },
   {
     name: "Vice Chairperson",
@@ -37,9 +37,15 @@ const cabinet = [
   },
   {
     name: "Coordinator",
-    role: "Mobilizes members and organizes developmental programs.",
+    role: "Mobilizes members and organizes programs.",
     bio: "Acts as a link between members and the cabinet.",
     image: "https://picsum.photos/seed/leader5/400/500"
+  },
+  {
+    name: "Agent",
+    role: "Collects savings and delivers them to the treasurer.",
+    bio: "Assists the treasurer and helps mobilize members to meet their financial obligations.",
+    image: "https://picsum.photos/seed/leader6/400/500"
   }
 ]
 
@@ -120,7 +126,7 @@ export default function AboutPage() {
               className="text-3xl sm:text-4xl font-black uppercase font-headline text-[#0b1f3a] mb-4"
             />
             <InkFlowText className="text-muted-foreground max-w-xl mx-auto text-sm sm:text-base">
-              K-unity is governed by a General Assembly and an Executive Committee dedicated to financial integrity.
+              K-unity Finance SACCO is governed by a General Assembly and an Executive Committee dedicated to financial integrity.
             </InkFlowText>
           </div>
 
