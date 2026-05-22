@@ -21,31 +21,31 @@ const cabinet = [
     name: "Vice Chairperson",
     role: "Assists the chairperson in all leadership duties.",
     bio: "Acts on behalf of the chairperson and supports committee coordination.",
-    image: "https://picsum.photos/seed/leader2/400/500"
+    image: "https://picsum.photos/seed/avatar-vc/400/500"
   },
   {
     name: "Treasurer",
     role: "Receives and records all savings and transactions.",
     bio: "Ensures transparency, accountability, and provides financial statements.",
-    image: "https://picsum.photos/seed/leader3/400/500"
+    image: "https://picsum.photos/seed/avatar-treasurer/400/500"
   },
   {
     name: "Secretary",
     role: "Records and keeps meeting minutes.",
     bio: "Handles correspondence and maintains official SACCO records.",
-    image: "https://picsum.photos/seed/leader4/400/500"
+    image: "https://picsum.photos/seed/avatar-secretary/400/500"
   },
   {
     name: "Coordinator",
     role: "Mobilizes members and organizes programs.",
     bio: "Acts as a link between members and the cabinet.",
-    image: "https://picsum.photos/seed/leader5/400/500"
+    image: "https://picsum.photos/seed/avatar-coordinator/400/500"
   },
   {
     name: "Agent",
     role: "Collects savings and delivers them to the treasurer.",
     bio: "Assists the treasurer and helps mobilize members to meet their financial obligations.",
-    image: "https://picsum.photos/seed/leader6/400/500"
+    image: "https://picsum.photos/seed/avatar-agent/400/500"
   }
 ]
 
@@ -76,7 +76,7 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto text-center space-y-8 lg:space-y-12">
             <BlurFocusText>
               <h2 className="text-[#c9922a] text-2xl sm:text-3xl md:text-5xl font-black uppercase font-serif tracking-tight leading-tight">
-                Empowering Youth
+                Empowering Youths
               </h2>
             </BlurFocusText>
             
