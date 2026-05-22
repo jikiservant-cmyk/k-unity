@@ -48,7 +48,7 @@ const products = [
   {
     title: "WELFARE SUPPORT",
     description: "Emergency support for members in need. Subject to cabinet approval to ensure fair and transparent distribution within the community.",
-    image: "https://picsum.photos/seed/welfare-unity/800/600",
+    image: "https://www.unicef.org/uganda/sites/unicef.org.uganda/files/styles/media_large_image/public/UNI55289396.webp?itok=yW49xO5w",
     icon: <Home className="h-8 w-8 sm:h-10 sm:w-10 text-[#FFB800]" />,
     bgColor: "bg-[#3E3E4E]",
     btnClass: "bg-[#FFB800] text-[#3E3E4E]",

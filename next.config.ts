@@ -82,6 +82,12 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.unicef.org',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
