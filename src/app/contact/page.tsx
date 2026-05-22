@@ -131,6 +131,17 @@ export default function ContactPage() {
                   <Input id="email" type="email" placeholder="john@example.com" required className="h-14 bg-[#faf8f3] border-none rounded-none focus-visible:ring-1 focus-visible:ring-[#c9922a] placeholder:text-gray-300" />
                 </div>
 
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  <div className="space-y-3">
+                    <Label htmlFor="phone" className="text-xs font-black uppercase tracking-widest text-[#0b1f3a]/50">Phone Number</Label>
+                    <Input id="phone" type="tel" placeholder="+256 700 000000" required className="h-14 bg-[#faf8f3] border-none rounded-none focus-visible:ring-1 focus-visible:ring-[#c9922a] placeholder:text-gray-300" />
+                  </div>
+                  <div className="space-y-3">
+                    <Label htmlFor="location" className="text-xs font-black uppercase tracking-widest text-[#0b1f3a]/50">Location</Label>
+                    <Input id="location" placeholder="e.g. Kampala, Nakawa" required className="h-14 bg-[#faf8f3] border-none rounded-none focus-visible:ring-1 focus-visible:ring-[#c9922a] placeholder:text-gray-300" />
+                  </div>
+                </div>
+
                 <div className="space-y-6">
                   <Label className="text-xs font-black uppercase tracking-widest text-[#0b1f3a]/50">Reason for inquiry</Label>
                   <RadioGroup defaultValue="inquiry" className="flex flex-col sm:flex-row sm:space-x-12 space-y-4 sm:space-y-0">
