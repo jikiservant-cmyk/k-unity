@@ -12,39 +12,39 @@ import { ImageReveal } from "@/components/ImageReveal"
 
 const cabinet = [
   {
-    name: "SACCO Chairperson",
-    role: "Presides over meetings and represents the SACCO.",
-    bio: "Oversees overall SACCO activities and ensures decisions are implemented.",
+    name: "Morris Wise",
+    role: "Chairperson",
+    bio: "Presides over meetings, represents the SACCO, and ensures all strategic decisions are implemented for the benefit of our youth members.",
     image: "/images/cp kunity.jpeg"
   },
   {
     name: "Vice Chairperson",
     role: "Assists the chairperson in all leadership duties.",
-    bio: "Acts on behalf of the chairperson and supports committee coordination.",
+    bio: "Acts on behalf of the chairperson and supports committee coordination and youth mobilization.",
     image: "https://image.shutterstock.com/image-vector/user-profile-icon-flat-style-260nw-2748799073.jpg"
   },
   {
     name: "Treasurer",
     role: "Receives and records all savings and transactions.",
-    bio: "Ensures transparency, accountability, and provides financial statements.",
+    bio: "Ensures financial transparency, accountability, and provides detailed financial statements to all investors.",
     image: "https://image.shutterstock.com/image-vector/user-profile-icon-flat-style-260nw-2748799073.jpg"
   },
   {
     name: "Secretary",
     role: "Records and keeps meeting minutes.",
-    bio: "Handles correspondence and maintains official SACCO records.",
+    bio: "Handles all official correspondence and maintains the integrity of the SACCO's administrative records.",
     image: "https://image.shutterstock.com/image-vector/user-profile-icon-flat-style-260nw-2748799073.jpg"
   },
   {
     name: "Coordinator",
     role: "Mobilizes members and organizes programs.",
-    bio: "Acts as a link between members and the cabinet.",
+    bio: "Acts as a vital link between the youth members and the cabinet to ensure effective communication.",
     image: "https://image.shutterstock.com/image-vector/user-profile-icon-flat-style-260nw-2748799073.jpg"
   },
   {
     name: "Agent",
-    role: "Collects savings and delivers them to the treasurer.",
-    bio: "Assists the treasurer and helps mobilize members to meet their financial obligations.",
+    role: "Field Operations & Mobilization",
+    bio: "Collects savings and delivers them to the treasurer while helping members meet their financial obligations.",
     image: "https://image.shutterstock.com/image-vector/user-profile-icon-flat-style-260nw-2748799073.jpg"
   }
 ]
