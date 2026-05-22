@@ -38,7 +38,7 @@ export function Navbar() {
       "w-full z-[100] sticky top-0 transition-all duration-500 ease-in-out border-b backdrop-blur-xl",
       isScrolled 
         ? "bg-[#0b1f3a]/90 border-[#c9922a]/10 h-[80px]" 
-        : "bg-[#0b1f3a]/95 border-[#c9922a]/20 h-[110px]"
+        : "bg-[#0b1f3a]/95 border-[#c9922a]/20 h-[120px]"
     )}>
       <nav className="container mx-auto px-4 sm:px-6 lg:px-12 h-full">
         <div className="flex h-full items-center justify-between">
@@ -49,30 +49,30 @@ export function Navbar() {
                 alt="K-unity Logo" 
                 className={cn(
                   "transition-all duration-500 object-contain",
-                  isScrolled ? "h-12 sm:h-14" : "h-16 sm:h-24"
+                  isScrolled ? "h-12 sm:h-14" : "h-20 sm:h-28"
                 )}
               />
               <div className={cn(
                 "font-serif text-white tracking-tight transition-all duration-500 ease-in-out overflow-hidden flex flex-col justify-center",
                 isScrolled 
                   ? "max-w-0 opacity-0 ml-0" 
-                  : "max-w-[300px] sm:max-w-[400px] opacity-100 ml-3 sm:ml-5"
+                  : "max-w-[400px] sm:max-w-[500px] opacity-100 ml-4 sm:ml-6"
               )}>
-                <span className="text-lg sm:text-xl lg:text-2xl font-bold leading-none">K-unity</span>
-                <span className="text-[#c9922a] text-[9px] sm:text-[10px] lg:text-[11px] uppercase tracking-widest font-bold leading-none mt-1">Finance SACCO</span>
+                <span className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-none">K-unity</span>
+                <span className="text-[#c9922a] text-[11px] sm:text-[12px] lg:text-[14px] uppercase tracking-[0.2em] font-bold leading-none mt-2">Finance SACCO</span>
               </div>
             </Link>
 
             <div className={cn(
               "hidden md:flex items-center transition-all duration-500",
-              isScrolled ? "ml-8 lg:ml-12 space-x-4 lg:space-x-8" : "ml-10 lg:ml-16 space-x-6 lg:space-x-10"
+              isScrolled ? "ml-8 lg:ml-12 space-x-4 lg:space-x-8" : "ml-12 lg:ml-20 space-x-6 lg:space-x-10"
             )}>
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   href={link.href}
                   className={cn(
-                    "text-[13px] font-normal tracking-[0.02em] transition-all hover:text-white font-body whitespace-nowrap",
+                    "text-[14px] font-normal tracking-[0.02em] transition-all hover:text-white font-body whitespace-nowrap",
                     pathname === link.href ? "text-[#c9922a]" : "text-white/65"
                   )}
                 >
@@ -87,7 +87,7 @@ export function Navbar() {
               <Link href="/contact">
                 <Button className={cn(
                   "bg-[#c9922a] hover:bg-[#e8b455] text-white border-none rounded-[6px] font-medium transition-all",
-                  isScrolled ? "px-5 h-9 text-xs" : "px-6 h-10 text-sm"
+                  isScrolled ? "px-5 h-9 text-xs" : "px-7 h-11 text-sm"
                 )}>
                   Join as Investor
                 </Button>
