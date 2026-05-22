@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react"
 import Link from "next/link"
-import { ShieldCheck, ArrowRight, PiggyBank, Banknote, Building2, School, TrendingUp, Users } from "lucide-react"
+import { ShieldCheck, ArrowRight, PiggyBank, TrendingUp, Users } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { KineticHeadline } from "@/components/KineticHeadline"
 import { MagneticButton } from "@/components/MagneticButton"
@@ -65,11 +65,11 @@ export default function Home() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-[#c9922a]/20 border border-[#c9922a]/50 px-4 py-1.5 rounded-full mb-8 slide-up">
               <ShieldCheck className="h-4 w-4 text-[#c9922a]" />
-              <span className="text-[10px] sm:text-[11px] text-[#c9922a] font-bold tracking-[0.15em] uppercase">Youth-Led Initiative</span>
+              <span className="text-[10px] sm:text-[11px] text-[#c9922a] font-bold tracking-[0.15em] uppercase">Community-Driven Initiative</span>
             </div>
             
             <KineticHeadline 
-              lines={["YOUTH UNITY", "FINANCE SACCO.", "SAVE. BORROW. GROW."]} 
+              lines={["K-UNITY", "FINANCE SACCO.", "SAVE. BORROW. GROW."]} 
               className="text-white text-4xl sm:text-6xl lg:text-[5.5rem] font-serif font-semibold leading-[0.95] mb-8"
               staggerDelay={0.1}
             />
@@ -122,7 +122,7 @@ export default function Home() {
                 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold text-[#0b1f3a] leading-tight"
               />
               <InkFlowText className="text-[#5a6070] text-base sm:text-lg font-light leading-relaxed max-w-lg">
-                Our SACCO promotes regular saving, financial literacy, and cooperative values among youths to foster independence and long-term growth.
+                K-unity Finance SACCO promotes regular saving, financial literacy, and cooperative values among youths to foster independence and long-term growth.
               </InkFlowText>
               <div className="relative aspect-video rounded-2xl overflow-hidden shadow-lg mt-8">
                 <ImageReveal 
@@ -211,7 +211,7 @@ export default function Home() {
           <MagneticButton className="w-full sm:w-auto">
             <Link href="/contact" className="w-full sm:w-auto">
               <Button className="w-full sm:w-auto bg-white text-[#c9922a] hover:shadow-2xl hover:-translate-y-1 h-16 sm:h-20 px-8 sm:px-12 rounded-[8px] text-lg sm:text-xl font-bold transition-all whitespace-nowrap">
-                Join the SACCO Today →
+                Join K-unity Today →
               </Button>
             </Link>
           </MagneticButton>

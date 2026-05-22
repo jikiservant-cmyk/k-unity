@@ -1,6 +1,5 @@
-
 import Link from "next/link"
-import { Facebook, Instagram, Twitter, Youtube, MapPin, Phone, Mail } from "lucide-react"
+import { Facebook, Instagram, Twitter, Youtube, MapPin, Mail } from "lucide-react"
 
 export function Footer() {
   return (
@@ -12,11 +11,11 @@ export function Footer() {
               <img 
                 src="/images/Adobe Express - file.png" 
                 alt="K-unity Logo" 
-                className="h-16 w-auto object-contain brightness-110"
+                className="h-20 w-auto object-contain brightness-110"
               />
               <div className="flex flex-col">
                 <span className="text-2xl font-serif text-white tracking-tight leading-none">
-                  Youth Unity
+                  K-unity
                 </span>
                 <span className="text-[#c9922a] text-[10px] uppercase tracking-widest font-bold mt-1">
                   Finance SACCO
@@ -57,14 +56,14 @@ export function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-[#c9922a] shrink-0" />
-                <span>info@youthunitysacco.co.ug</span>
+                <span>info@k-unitysacco.co.ug</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-[12px] font-light">© {new Date().getFullYear()} Youth Unity SACCO. All rights reserved.</p>
+          <p className="text-[12px] font-light">© {new Date().getFullYear()} K-unity Finance SACCO. All rights reserved.</p>
           <div className="flex space-x-6">
             <Link href="#" className="text-white/20 hover:text-[#c9922a] transition-colors"><Facebook className="h-5 w-5" /></Link>
             <Link href="#" className="text-white/20 hover:text-[#c9922a] transition-colors"><Twitter className="h-5 w-5" /></Link>

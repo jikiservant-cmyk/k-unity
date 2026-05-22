@@ -27,19 +27,19 @@ const cabinet = [
     name: "Treasurer",
     role: "Receives and records all savings and transactions.",
     bio: "Ensures transparency, accountability, and provides financial statements.",
-    image: "/images/IMG_8891.jpg"
+    image: "https://picsum.photos/seed/leader3/400/500"
   },
   {
     name: "Secretary",
     role: "Records and keeps meeting minutes.",
     bio: "Handles correspondence and maintains official SACCO records.",
-    image: "https://picsum.photos/seed/leader3/400/500"
+    image: "https://picsum.photos/seed/leader4/400/500"
   },
   {
     name: "Coordinator",
     role: "Mobilizes members and organizes developmental programs.",
     bio: "Acts as a link between members and the cabinet.",
-    image: "https://picsum.photos/seed/leader4/400/500"
+    image: "https://picsum.photos/seed/leader5/400/500"
   }
 ]
 
@@ -94,7 +94,7 @@ export default function AboutPage() {
               <Separator className="bg-[#0b1f3a]/10 w-32 h-[2px]" />
               <div className="space-y-4 text-muted-foreground text-base sm:text-lg leading-relaxed font-body">
                 <p>1. Promote a culture of regular saving among members.</p>
-                <p>2. Provide affordable credit for tuition and welfare.</p>
+                <p>2. Provide affordable credit for welfare and development.</p>
                 <p>3. Assist members in starting small enterprises upon graduation.</p>
                 <p>4. Support members joining university with tuition financing.</p>
                 <p>5. Foster a network of financially independent youths.</p>
@@ -120,7 +120,7 @@ export default function AboutPage() {
               className="text-3xl sm:text-4xl font-black uppercase font-headline text-[#0b1f3a] mb-4"
             />
             <InkFlowText className="text-muted-foreground max-w-xl mx-auto text-sm sm:text-base">
-              The SACCO is governed by a General Assembly and an Executive Committee dedicated to financial integrity.
+              K-unity is governed by a General Assembly and an Executive Committee dedicated to financial integrity.
             </InkFlowText>
           </div>
 

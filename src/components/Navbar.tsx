@@ -1,4 +1,3 @@
-
 "use client"
 
 import * as React from "react"
@@ -38,8 +37,8 @@ export function Navbar() {
     <header className={cn(
       "w-full z-[100] sticky top-0 transition-all duration-500 ease-in-out border-b backdrop-blur-xl",
       isScrolled 
-        ? "bg-[#0b1f3a]/90 border-[#c9922a]/10 h-[72px]" 
-        : "bg-[#0b1f3a]/95 border-[#c9922a]/20 h-[100px]"
+        ? "bg-[#0b1f3a]/90 border-[#c9922a]/10 h-[80px]" 
+        : "bg-[#0b1f3a]/95 border-[#c9922a]/20 h-[110px]"
     )}>
       <nav className="container mx-auto px-4 sm:px-6 lg:px-12 h-full">
         <div className="flex h-full items-center justify-between">
@@ -50,16 +49,16 @@ export function Navbar() {
                 alt="K-unity Logo" 
                 className={cn(
                   "transition-all duration-500 object-contain",
-                  isScrolled ? "h-10 sm:h-12" : "h-14 sm:h-20"
+                  isScrolled ? "h-12 sm:h-14" : "h-16 sm:h-24"
                 )}
               />
               <div className={cn(
                 "font-serif text-white tracking-tight transition-all duration-500 ease-in-out overflow-hidden flex flex-col justify-center",
                 isScrolled 
                   ? "max-w-0 opacity-0 ml-0" 
-                  : "max-w-[300px] sm:max-w-[400px] opacity-100 ml-3 sm:ml-4"
+                  : "max-w-[300px] sm:max-w-[400px] opacity-100 ml-3 sm:ml-5"
               )}>
-                <span className="text-base sm:text-lg lg:text-xl font-bold leading-none">Youth Unity</span>
+                <span className="text-lg sm:text-xl lg:text-2xl font-bold leading-none">K-unity</span>
                 <span className="text-[#c9922a] text-[9px] sm:text-[10px] lg:text-[11px] uppercase tracking-widest font-bold leading-none mt-1">Finance SACCO</span>
               </div>
             </Link>

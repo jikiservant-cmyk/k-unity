@@ -77,7 +77,7 @@ export default function ContactPage() {
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-lg font-bold text-[#0b1f3a] uppercase tracking-wide">Location</h3>
-                    <p className="text-muted-foreground font-body text-sm">Kololo High School Area, Near Nabweru Rd, Kampala, Uganda</p>
+                    <p className="text-muted-foreground font-body text-sm">Kampala, Uganda</p>
                   </div>
                 </div>
 
