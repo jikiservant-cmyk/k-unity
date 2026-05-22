@@ -22,16 +22,16 @@ const savingPlans = [
     id: "MODERATE",
     title: "Moderate Saving",
     amount: "UGX 5,000 / week",
-    description: "Designed for students with a balanced saving goal. Provides a solid base for future enterprise startup.",
-    benefits: ["Medium interest yield", "Tuition support priority", "Audited records"],
+    description: "Designed for members with a balanced saving goal. Provides a solid base for future enterprise startup.",
+    benefits: ["Medium interest yield", "Development support priority", "Audited records"],
     image: "https://picsum.photos/seed/save2/600/600"
   },
   {
     id: "SUPER",
     title: "Super Saving",
     amount: "UGX 10,000 / week",
-    description: "For the dedicated student investor aiming for significant financial growth during their A' level tenure.",
-    benefits: ["High loan limit", "University entry support", "Transparent reporting"],
+    description: "For the dedicated youth investor aiming for significant financial growth and project funding.",
+    benefits: ["High loan limit", "Project entry support", "Transparent reporting"],
     image: "https://picsum.photos/seed/save3/600/600"
   },
   {
@@ -84,8 +84,8 @@ export default function SavingsPage() {
               </button>
             </MagneticButton>
             <div className="space-y-1">
-              <p className="font-bold text-lg sm:text-xl font-serif">A Academic Year Cycle</p>
-              <p className="text-white/60 text-xs sm:text-sm font-body">Supervised by Kololo High Administration</p>
+              <p className="font-bold text-lg sm:text-xl font-serif">A Professional Saving Cycle</p>
+              <p className="text-white/60 text-xs sm:text-sm font-body">Supervised by our expert management team</p>
             </div>
           </div>
         </div>
@@ -100,8 +100,8 @@ export default function SavingsPage() {
                 <ShieldCheck className="h-6 w-6 sm:h-8 sm:w-8" />
               </div>
               <div>
-                <h4 className="font-bold text-[#0b1f3a] text-sm sm:text-base">A' Level Eligible</h4>
-                <p className="text-muted-foreground text-xs sm:text-sm">Exclusively for senior students</p>
+                <h4 className="font-bold text-[#0b1f3a] text-sm sm:text-base">Youth Eligible</h4>
+                <p className="text-muted-foreground text-xs sm:text-sm">Empowering ambitious minds</p>
               </div>
             </div>
             <div className="flex items-center space-x-6">
@@ -110,7 +110,7 @@ export default function SavingsPage() {
               </div>
               <div>
                 <h4 className="font-bold text-[#0b1f3a] text-sm sm:text-base">Tuition Support</h4>
-                <p className="text-muted-foreground text-xs sm:text-sm">Save for university entry</p>
+                <p className="text-muted-foreground text-xs sm:text-sm">Save for higher education</p>
               </div>
             </div>
             <div className="flex items-center space-x-6">
@@ -119,7 +119,7 @@ export default function SavingsPage() {
               </div>
               <div>
                 <h4 className="font-bold text-[#0b1f3a] text-sm sm:text-base">Enterprise Fund</h4>
-                <p className="text-muted-foreground text-xs sm:text-sm">Start your own business</p>
+                <p className="text-muted-foreground text-xs sm:text-sm">Seed capital for your business</p>
               </div>
             </div>
           </div>

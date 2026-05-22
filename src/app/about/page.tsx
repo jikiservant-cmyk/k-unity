@@ -21,31 +21,31 @@ const cabinet = [
     name: "Vice Chairperson",
     role: "Assists the chairperson in all leadership duties.",
     bio: "Acts on behalf of the chairperson and supports committee coordination.",
-    image: "https://picsum.photos/seed/avatar-vc/400/500"
+    image: "https://image.shutterstock.com/image-vector/user-profile-icon-flat-style-260nw-2748799073.jpg"
   },
   {
     name: "Treasurer",
     role: "Receives and records all savings and transactions.",
     bio: "Ensures transparency, accountability, and provides financial statements.",
-    image: "https://picsum.photos/seed/avatar-treasurer/400/500"
+    image: "https://image.shutterstock.com/image-vector/user-profile-icon-flat-style-260nw-2748799073.jpg"
   },
   {
     name: "Secretary",
     role: "Records and keeps meeting minutes.",
     bio: "Handles correspondence and maintains official SACCO records.",
-    image: "https://picsum.photos/seed/avatar-secretary/400/500"
+    image: "https://image.shutterstock.com/image-vector/user-profile-icon-flat-style-260nw-2748799073.jpg"
   },
   {
     name: "Coordinator",
     role: "Mobilizes members and organizes programs.",
     bio: "Acts as a link between members and the cabinet.",
-    image: "https://picsum.photos/seed/avatar-coordinator/400/500"
+    image: "https://image.shutterstock.com/image-vector/user-profile-icon-flat-style-260nw-2748799073.jpg"
   },
   {
     name: "Agent",
     role: "Collects savings and delivers them to the treasurer.",
     bio: "Assists the treasurer and helps mobilize members to meet their financial obligations.",
-    image: "https://picsum.photos/seed/avatar-agent/400/500"
+    image: "https://image.shutterstock.com/image-vector/user-profile-icon-flat-style-260nw-2748799073.jpg"
   }
 ]
 
@@ -101,9 +101,9 @@ export default function AboutPage() {
               <div className="space-y-4 text-muted-foreground text-base sm:text-lg leading-relaxed font-body">
                 <p>1. Promote a culture of regular saving among members.</p>
                 <p>2. Provide affordable credit for welfare and development.</p>
-                <p>3. Assist members in starting small enterprises upon graduation.</p>
-                <p>4. Support members joining university with tuition financing.</p>
-                <p>5. Foster a network of financially independent youths.</p>
+                <p>3. Assist members in starting small enterprises through expert guidance.</p>
+                <p>4. Support members transitioning to university with bridge financing.</p>
+                <p>5. Foster a network of financially independent and disciplined youths.</p>
               </div>
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl slide-up" style={{ animationDelay: '0.4s' }}>
@@ -126,14 +126,14 @@ export default function AboutPage() {
               className="text-3xl sm:text-4xl font-black uppercase font-headline text-[#0b1f3a] mb-4"
             />
             <InkFlowText className="text-muted-foreground max-w-xl mx-auto text-sm sm:text-base">
-              K-unity Finance SACCO is governed by a General Assembly and an Executive Committee dedicated to financial integrity.
+              K-unity Finance SACCO is governed by a General Assembly and an Executive Committee dedicated to financial integrity and professional excellence.
             </InkFlowText>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
             {cabinet.map((member, i) => (
               <div key={i} className="flex flex-col space-y-6 slide-up" style={{ animationDelay: `${i * 0.2}s` }}>
-                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-lg">
+                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-lg bg-gray-100">
                   <ImageReveal 
                     src={member.image} 
                     alt={member.name} 
