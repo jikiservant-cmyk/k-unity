@@ -58,8 +58,8 @@ export function Navbar() {
                   ? "max-w-0 opacity-0 ml-0" 
                   : "max-w-[300px] sm:max-w-[400px] opacity-100 ml-2 sm:ml-3"
               )}>
-                <span className="text-sm sm:text-base lg:text-lg font-bold leading-none">Kololo High</span>
-                <span className="text-[#c9922a] text-[8px] sm:text-[9px] lg:text-[10px] uppercase tracking-widest font-bold leading-none mt-1">Student SACCO</span>
+                <span className="text-sm sm:text-base lg:text-lg font-bold leading-none">Youth Unity</span>
+                <span className="text-[#c9922a] text-[8px] sm:text-[9px] lg:text-[10px] uppercase tracking-widest font-bold leading-none mt-1">Finance SACCO</span>
               </div>
             </Link>
 

@@ -65,17 +65,17 @@ export default function Home() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-[#c9922a]/20 border border-[#c9922a]/50 px-4 py-1.5 rounded-full mb-8 slide-up">
               <ShieldCheck className="h-4 w-4 text-[#c9922a]" />
-              <span className="text-[10px] sm:text-[11px] text-[#c9922a] font-bold tracking-[0.15em] uppercase">Student-Led · Kololo High School</span>
+              <span className="text-[10px] sm:text-[11px] text-[#c9922a] font-bold tracking-[0.15em] uppercase">Youth-Led Initiative</span>
             </div>
             
             <KineticHeadline 
-              lines={["KOLOLO HIGH", "STUDENT SACCO.", "SAVE. BORROW. GROW."]} 
+              lines={["YOUTH UNITY", "FINANCE SACCO.", "SAVE. BORROW. GROW."]} 
               className="text-white text-4xl sm:text-6xl lg:text-[5.5rem] font-serif font-semibold leading-[0.95] mb-8"
               staggerDelay={0.1}
             />
             
             <InkFlowText className="text-white/90 text-base md:text-xl font-body max-w-lg mb-12 font-light leading-relaxed">
-              Empowering students with financial discipline and literacy. Join a community of student investors building a secure future together.
+              Empowering youths with financial discipline and literacy. Join a community of investors building a secure future together.
             </InkFlowText>
             
             <div className="flex flex-wrap gap-4 slide-up" style={{ animationDelay: '0.4s' }}>
@@ -118,16 +118,16 @@ export default function Home() {
             <div className="space-y-6 lg:space-y-8 slide-up">
               <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-[#c9922a]">Our Identity</span>
               <KineticHeadline 
-                lines={["A FINANCIALLY", "RESPONSIBLE STUDENT", "COMMUNITY"]} 
+                lines={["A FINANCIALLY", "RESPONSIBLE YOUTH", "COMMUNITY"]} 
                 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold text-[#0b1f3a] leading-tight"
               />
               <InkFlowText className="text-[#5a6070] text-base sm:text-lg font-light leading-relaxed max-w-lg">
-                Operating under the supervision of Kololo High School administration, the SACCO promotes regular saving, financial literacy, and cooperative values among all A' level students.
+                Our SACCO promotes regular saving, financial literacy, and cooperative values among youths to foster independence and long-term growth.
               </InkFlowText>
               <div className="relative aspect-video rounded-2xl overflow-hidden shadow-lg mt-8">
                 <ImageReveal 
                   src="https://i.guim.co.uk/img/media/3a20af1c6e55372aab2693c0ee8d615b52e7343a/0_484_2000_1467/master/2000.jpg?width=620&dpr=1&s=none&crop=none" 
-                  alt="Kololo Heritage" 
+                  alt="Community Heritage" 
                   className="w-full h-full"
                   maskColor="bg-[#faf8f3]"
                 />
@@ -137,12 +137,12 @@ export default function Home() {
               <div className="bg-[#0b1f3a] p-8 lg:p-10 rounded-[16px] text-white space-y-4 slide-up" style={{ animationDelay: '0.1s' }}>
                 <TrendingUp className="h-8 w-8 text-[#c9922a]" />
                 <h3 className="text-2xl font-serif">Vision</h3>
-                <p className="text-white/50 text-sm font-light leading-relaxed">To build a financially responsible student in our community.</p>
+                <p className="text-white/50 text-sm font-light leading-relaxed">To build a financially responsible youth in our community.</p>
               </div>
               <div className="bg-[#c9922a] p-8 lg:p-10 rounded-[16px] text-white space-y-4 slide-up" style={{ animationDelay: '0.2s' }}>
                 <Users className="h-8 w-8 text-white" />
                 <h3 className="text-2xl font-serif">Mission</h3>
-                <p className="text-white/80 text-sm font-light leading-relaxed">Promoting a culture of saving, responsible borrowing, and financial literacy among students.</p>
+                <p className="text-white/80 text-sm font-light leading-relaxed">Promoting a culture of saving, responsible borrowing, and financial literacy among youths.</p>
               </div>
             </div>
           </div>
@@ -180,13 +180,13 @@ export default function Home() {
       <section className="py-20 lg:py-32 bg-[#0b1f3a] text-white px-6 lg:px-[6%] overflow-hidden">
         <div className="container mx-auto">
           <div className="max-w-xl mb-16 slide-up">
-            <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-[#c9922a]">The Student Journey</span>
+            <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-[#c9922a]">The Growth Journey</span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold mt-4 leading-tight">Become an <em className="text-[#c9922a] not-italic">investor</em></h2>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t border-white/10">
             {[
-              { num: "01", title: "Registration", desc: "Available for all A' level students. Fill out the membership form today." },
+              { num: "01", title: "Registration", desc: "Available for all ambitious youths. Fill out the membership form today." },
               { num: "02", title: "Select Category", desc: "Choose your weekly saving tier: Basic, Moderate, Super, or Premium." },
               { num: "03", title: "Save Regularly", desc: "Build your financial history through consistent weekly savings." },
               { num: "04", title: "Access Support", desc: "Apply for tuition or enterprise loans after consistent saving." }
@@ -205,8 +205,8 @@ export default function Home() {
       <section className="py-20 lg:py-32 bg-[#c9922a] text-white px-6 lg:px-[6%] overflow-hidden">
         <div className="container mx-auto flex flex-col lg:flex-row justify-between items-start lg:items-center gap-12 slide-up">
           <div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold leading-tight">Start your financial<br className="hidden sm:block"/>legacy at Kololo High</h2>
-            <p className="text-white/70 text-base sm:text-lg font-light mt-4">Empowering students through collective savings and credit.</p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold leading-tight">Start your financial<br className="hidden sm:block"/>legacy with us</h2>
+            <p className="text-white/70 text-base sm:text-lg font-light mt-4">Empowering the youth through collective savings and credit.</p>
           </div>
           <MagneticButton className="w-full sm:w-auto">
             <Link href="/contact" className="w-full sm:w-auto">

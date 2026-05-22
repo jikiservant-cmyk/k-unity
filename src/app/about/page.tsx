@@ -70,13 +70,13 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto text-center space-y-8 lg:space-y-12">
             <BlurFocusText>
               <h2 className="text-[#c9922a] text-2xl sm:text-3xl md:text-5xl font-black uppercase font-serif tracking-tight leading-tight">
-                Empowering Students
+                Empowering Youth
               </h2>
             </BlurFocusText>
             
             <div className="space-y-6 lg:space-y-8">
               <InkFlowText delay={0.8} className="text-lg sm:text-xl md:text-2xl font-body leading-relaxed text-white/90 italic">
-                "To build a financially responsible student in our community by promoting a culture of saving, responsible borrowing, and financial literacy among A' level students at Kololo High School."
+                "To build a financially responsible youth in our community by promoting a culture of saving, responsible borrowing, and financial literacy."
               </InkFlowText>
             </div>
           </div>
@@ -88,7 +88,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="space-y-6 lg:space-y-8 slide-up">
               <KineticHeadline 
-                lines={["THE KOLOLO HIGH", "SACCO OBJECTIVES"]} 
+                lines={["THE SACCO", "OBJECTIVES"]} 
                 className="text-3xl sm:text-4xl lg:text-6xl font-black uppercase font-headline tracking-tighter text-[#0b1f3a] leading-tight"
               />
               <Separator className="bg-[#0b1f3a]/10 w-32 h-[2px]" />
@@ -97,6 +97,7 @@ export default function AboutPage() {
                 <p>2. Provide affordable credit for tuition and welfare.</p>
                 <p>3. Assist members in starting small enterprises upon graduation.</p>
                 <p>4. Support members joining university with tuition financing.</p>
+                <p>5. Foster a network of financially independent youths.</p>
               </div>
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl slide-up" style={{ animationDelay: '0.4s' }}>
@@ -148,7 +149,7 @@ export default function AboutPage() {
       <section className="py-20 lg:py-24 bg-[#0b1f3a] text-white text-center px-6 overflow-hidden">
         <div className="container mx-auto">
           <KineticHeadline 
-            lines={["INVEST IN YOUR", "STUDENT LEGACY"]} 
+            lines={["INVEST IN YOUR", "FUTURE LEGACY"]} 
             className="text-3xl sm:text-5xl lg:text-6xl font-black uppercase font-headline mb-8 leading-tight"
           />
           <MagneticButton className="w-full sm:w-auto">

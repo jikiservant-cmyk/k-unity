@@ -7,31 +7,31 @@ import { Toaster } from '@/components/ui/toaster';
 export const metadata: Metadata = {
   metadataBase: new URL('https://ncfonlinechurch.netlify.app'),
   title: {
-    default: 'Kololo High Student SACCO | Building Financially Responsible Students',
-    template: '%s | Kololo High Student SACCO',
+    default: 'Youth Unity SACCO | Building Financially Responsible Youths',
+    template: '%s | Youth Unity SACCO',
   },
-  description: 'The official Kololo High Student’s Saving and Credit Cooperative Society. Promoting a culture of saving, responsible borrowing, and financial literacy among students.',
-  keywords: ['Kololo High School SACCO', 'Student SACCO Uganda', 'Student Savings', 'K-unity Finance', 'Cooperative Banking'],
-  authors: [{ name: 'Kololo High Student SACCO' }],
-  creator: 'Kololo High Student SACCO',
-  publisher: 'Kololo High Student SACCO',
+  description: 'The official Saving and Credit Cooperative Society for youths. Promoting a culture of saving, responsible borrowing, and financial literacy.',
+  keywords: ['Youth SACCO Uganda', 'Youth Savings', 'K-unity Finance', 'Cooperative Banking', 'Financial Literacy'],
+  authors: [{ name: 'Youth Unity SACCO' }],
+  creator: 'Youth Unity SACCO',
+  publisher: 'Youth Unity SACCO',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: 'Kololo High Student SACCO | Save for Your Future',
-    description: 'Empowering A’ level students at Kololo High School through financial literacy and affordable credit.',
+    title: 'Youth Unity SACCO | Save for Your Future',
+    description: 'Empowering youths through financial literacy and affordable credit.',
     url: 'https://ncfonlinechurch.netlify.app',
-    siteName: 'Kololo High Student SACCO',
+    siteName: 'Youth Unity SACCO',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kololo High Student SACCO | Secure Your Future',
-    description: 'Promoting a culture of saving and financial discipline within the Kololo High School community.',
+    title: 'Youth Unity SACCO | Secure Your Future',
+    description: 'Promoting a culture of saving and financial discipline within the community.',
   },
 };
 
