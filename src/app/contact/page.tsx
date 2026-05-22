@@ -24,7 +24,7 @@ export default function ContactPage() {
       setIsSubmitting(false)
       toast({
         title: "Message Sent",
-        description: "Thank you for reaching out to K-unity Finance. Our advisors will contact you shortly.",
+        description: "Thank you for reaching out to K-unity Finance. Our advisors will contact you shortly via Morriswise940@gmail.com.",
       })
     }, 1500)
   }
@@ -97,7 +97,7 @@ export default function ContactPage() {
                   </div>
                   <div className="space-y-1">
                     <h3 className="text-lg font-bold text-[#0b1f3a] uppercase tracking-wide">Email</h3>
-                    <p className="text-muted-foreground font-body text-sm">info@k-unitysacco.co.ug</p>
+                    <p className="text-muted-foreground font-body text-sm">Morriswise940@gmail.com</p>
                   </div>
                 </div>
               </div>
