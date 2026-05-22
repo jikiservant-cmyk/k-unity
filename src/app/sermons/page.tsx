@@ -16,34 +16,43 @@ const products = [
     icon: <Scale className="h-8 w-8 sm:h-10 sm:w-10 text-[#FFB800]" />,
     bgColor: "bg-[#3E3E4E]",
     btnClass: "bg-[#FFB800] text-[#3E3E4E]",
-    stats: "5% Member / 10% Non-Member Interest"
+    stats: "5% Member / 10% Non-Member"
+  },
+  {
+    title: "AGRI-BUSINESS LOAN",
+    description: "Empowering youth entrepreneurs in agriculture. Access capital for modern tools, seeds, and livestock to build sustainable farming ventures.",
+    image: "https://coffeeheads.com/wp-content/uploads/2018/04/Blog-Pic-Harvesting__1597682371_94.206.192.97.jpg",
+    icon: <Tractor className="h-8 w-8 sm:h-10 sm:w-10 text-[#FFB800]" />,
+    bgColor: "bg-[#003322]",
+    btnClass: "border-[#FFB800] text-[#FFB800]",
+    stats: "Promoting Modern Farming"
   },
   {
     title: "UNIVERSITY TUITION",
-    description: "Specifically designed to support members who are transitioning to university. Access affordable credit to bridge the gap for entry fees.",
+    description: "Specifically designed to support youths transitioning to higher education. Access affordable credit to bridge the gap for entry fees.",
     image: "https://blog.lendsqr.com/wp-content/uploads/2025/05/How-to-get-a-student-loan-in-Uganda.webp",
     icon: <GraduationCap className="h-8 w-8 sm:h-10 sm:w-10 text-[#FFB800]" />,
-    bgColor: "bg-[#003322]",
-    btnClass: "border-[#FFB800] text-[#FFB800]",
-    stats: "Supports Post-Graduation Entry"
+    bgColor: "bg-[#3E3E4E]",
+    btnClass: "bg-[#FFB800] text-[#3E3E4E]",
+    stats: "Higher Education Support"
   },
   {
     title: "ENTERPRISE STARTUP",
-    description: "For members not joining university, we provide capital to start small enterprises or income-generating activities in our community.",
+    description: "For members starting small enterprises or income-generating activities. We provide the seed capital required to launch your business.",
     image: "https://media.gettyimages.com/id/1151368592/photo/taxi-with-the-taxi-driver-posing-in-hillbrow-johannesburg.jpg?s=612x612&w=0&k=20&c=4m9x8pDnLB3I2OogORjG_t4rxzAFyx4Tp_jvq1zUcac=",
     icon: <Briefcase className="h-8 w-8 sm:h-10 sm:w-10 text-[#FFB800]" />,
-    bgColor: "bg-[#3E3E4E]",
-    btnClass: "bg-[#FFB800] text-[#3E3E4E]",
-    stats: "Empowering Local Commerce"
+    bgColor: "bg-[#003322]",
+    btnClass: "border-[#FFB800] text-[#FFB800]",
+    stats: "Youth Entrepreneurship"
   },
   {
     title: "WELFARE SUPPORT",
-    description: "Emergency support for members in need. Subject to agreed conditions and cabinet approval to ensure fair distribution.",
-    image: "https://picsum.photos/seed/welfare/800/600",
+    description: "Emergency support for members in need. Subject to cabinet approval to ensure fair and transparent distribution within the community.",
+    image: "https://picsum.photos/seed/welfare-unity/800/600",
     icon: <Home className="h-8 w-8 sm:h-10 sm:w-10 text-[#FFB800]" />,
-    bgColor: "bg-[#003322]",
-    btnClass: "border-[#FFB800] text-[#FFB800]",
-    stats: "Community-Focused Welfare"
+    bgColor: "bg-[#3E3E4E]",
+    btnClass: "bg-[#FFB800] text-[#3E3E4E]",
+    stats: "Community Well-being"
   }
 ]
 
