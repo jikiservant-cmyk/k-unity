@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image"
-import { Shield, Target, Award, ArrowRight, School } from "lucide-react"
+import { Shield, Target, Award, ArrowRight, School, Users, Landmark, BookOpen } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { KineticHeadline } from "@/components/KineticHeadline"
 import { InkFlowText } from "@/components/InkFlowText"
@@ -10,24 +10,36 @@ import { BlurFocusText } from "@/components/BlurFocusText"
 import { Separator } from "@/components/ui/separator"
 import { ImageReveal } from "@/components/ImageReveal"
 
-const leadership = [
+const cabinet = [
   {
-    name: "Mubiru Florence",
-    role: "SACCO Chairperson",
-    bio: "Visionary leader focused on expanding the K-unity reach and member wealth.",
+    name: "SACCO Chairperson",
+    role: "Presides over meetings and represents the SACCO.",
+    bio: "Oversees overall SACCO activities and ensures decisions are implemented.",
     image: "https://picsum.photos/seed/leader1/400/500"
   },
   {
-    name: "Kembabazi Rose",
-    role: "Operations Manager",
-    bio: "Ensuring efficient service delivery and maintaining the Kololo heritage.",
+    name: "Vice Chairperson",
+    role: "Assists the chairperson in all leadership duties.",
+    bio: "Acts on behalf of the chairperson and supports committee coordination.",
+    image: "https://picsum.photos/seed/leader2/400/500"
+  },
+  {
+    name: "Treasurer",
+    role: "Receives and records all savings and transactions.",
+    bio: "Ensures transparency, accountability, and provides financial statements.",
     image: "/images/IMG_8891.jpg"
   },
   {
-    name: "Sebalamu Geoffrey",
-    role: "Investment Director",
-    bio: "Developing sustainable portfolios for our diverse membership base.",
+    name: "Secretary",
+    role: "Records and keeps meeting minutes.",
+    bio: "Handles correspondence and maintains official SACCO records.",
     image: "https://picsum.photos/seed/leader3/400/500"
+  },
+  {
+    name: "Coordinator",
+    role: "Mobilizes members and organizes developmental programs.",
+    bio: "Acts as a link between members and the cabinet.",
+    image: "https://picsum.photos/seed/leader4/400/500"
   }
 ]
 
@@ -46,7 +58,7 @@ export default function AboutPage() {
         
         <div className="container mx-auto px-6 relative z-10 text-center">
           <KineticHeadline 
-            lines={["ABOUT K-UNITY", "FINANCE SACCO"]} 
+            lines={["OUR CONSTITUTION", "OUR MISSION"]} 
             className="text-4xl sm:text-7xl lg:text-[8rem] font-black uppercase tracking-tighter leading-[0.85] font-serif text-[#c9922a]"
             staggerDelay={0.2}
           />
@@ -58,13 +70,13 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto text-center space-y-8 lg:space-y-12">
             <BlurFocusText>
               <h2 className="text-[#c9922a] text-2xl sm:text-3xl md:text-5xl font-black uppercase font-serif tracking-tight leading-tight">
-                Roots in Excellence
+                Empowering Students
               </h2>
             </BlurFocusText>
             
             <div className="space-y-6 lg:space-y-8">
               <InkFlowText delay={0.8} className="text-lg sm:text-xl md:text-2xl font-body leading-relaxed text-white/90 italic">
-                "The 'K' in K-unity represents Kololo High School, our origin and inspiration. We provide quality financial services that improve the socio-economic status of our members through a transparent, professional model."
+                "To build a financially responsible student in our community by promoting a culture of saving, responsible borrowing, and financial literacy among A' level students at Kololo High School."
               </InkFlowText>
             </div>
           </div>
@@ -76,22 +88,15 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="space-y-6 lg:space-y-8 slide-up">
               <KineticHeadline 
-                lines={["A LEGACY OF", "FINANCIAL UNITY"]} 
+                lines={["THE KOLOLO HIGH", "SACCO OBJECTIVES"]} 
                 className="text-3xl sm:text-4xl lg:text-6xl font-black uppercase font-headline tracking-tighter text-[#0b1f3a] leading-tight"
               />
               <Separator className="bg-[#0b1f3a]/10 w-32 h-[2px]" />
-              <InkFlowText className="text-muted-foreground text-base sm:text-lg leading-relaxed font-body">
-                K-unity Finance SACCO was established by the alumni and community of Kololo High School. What began as a small savings group has evolved into a premier financial institution serving thousands across Uganda.
-              </InkFlowText>
-              <div className="grid grid-cols-2 gap-6 sm:gap-8 pt-4">
-                <div className="space-y-1 slide-up" style={{ animationDelay: '0.2s' }}>
-                  <span className="text-3xl sm:text-4xl font-black text-[#c9922a]">20+</span>
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Years of Heritage</p>
-                </div>
-                <div className="space-y-1 slide-up" style={{ animationDelay: '0.3s' }}>
-                  <span className="text-3xl sm:text-4xl font-black text-[#c9922a]">70+</span>
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Active Members</p>
-                </div>
+              <div className="space-y-4 text-muted-foreground text-base sm:text-lg leading-relaxed font-body">
+                <p>1. Promote a culture of regular saving among members.</p>
+                <p>2. Provide affordable credit for tuition and welfare.</p>
+                <p>3. Assist members in starting small enterprises upon graduation.</p>
+                <p>4. Support members joining university with tuition financing.</p>
               </div>
             </div>
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl slide-up" style={{ animationDelay: '0.4s' }}>
@@ -110,16 +115,16 @@ export default function AboutPage() {
         <div className="container mx-auto px-6 md:px-12">
           <div className="text-center mb-12 lg:mb-16 slide-up">
             <KineticHeadline 
-              lines={["OUR LEADERSHIP"]} 
+              lines={["OUR CABINET"]} 
               className="text-3xl sm:text-4xl font-black uppercase font-headline text-[#0b1f3a] mb-4"
             />
             <InkFlowText className="text-muted-foreground max-w-xl mx-auto text-sm sm:text-base">
-              Guided by a board of directors committed to financial integrity and member empowerment.
+              The SACCO is governed by a General Assembly and an Executive Committee dedicated to financial integrity.
             </InkFlowText>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
-            {leadership.map((member, i) => (
+            {cabinet.map((member, i) => (
               <div key={i} className="flex flex-col space-y-6 slide-up" style={{ animationDelay: `${i * 0.2}s` }}>
                 <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-lg">
                   <ImageReveal 
@@ -143,12 +148,12 @@ export default function AboutPage() {
       <section className="py-20 lg:py-24 bg-[#0b1f3a] text-white text-center px-6 overflow-hidden">
         <div className="container mx-auto">
           <KineticHeadline 
-            lines={["SECURE YOUR", "FUTURE TODAY"]} 
+            lines={["INVEST IN YOUR", "STUDENT LEGACY"]} 
             className="text-3xl sm:text-5xl lg:text-6xl font-black uppercase font-headline mb-8 leading-tight"
           />
           <MagneticButton className="w-full sm:w-auto">
             <Button className="w-full sm:w-auto bg-[#c9922a] text-white hover:bg-[#e8b455] font-black h-16 sm:h-20 px-10 rounded-full text-lg sm:text-xl group">
-              JOIN K-UNITY <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform" />
+              JOIN AS INVESTOR <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform" />
             </Button>
           </MagneticButton>
         </div>

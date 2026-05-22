@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowRight, Landmark, Briefcase, GraduationCap, Home, Car, Tractor } from "lucide-react"
+import { ArrowRight, Landmark, Briefcase, GraduationCap, Home, Car, Tractor, Scale } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { KineticHeadline } from "@/components/KineticHeadline"
 import { InkFlowText } from "@/components/InkFlowText"
@@ -10,36 +10,40 @@ import { cn } from "@/lib/utils"
 
 const products = [
   {
-    title: "BUSINESS LOANS",
-    description: "Scale your enterprise with our low-interest business credit. We provide flexible repayment plans tailored to your cash flow cycles.",
+    title: "LOAN POLICY",
+    description: "Members may receive loans up to 3/4 of their savings. Repayment is structured in 3 installments with a fair 5% interest rate for members.",
     image: "https://www.dhl.com/discover/adobe/dynamicmedia/deliver/dm-aid--5f9319da-2ace-494a-ad36-3cb6eff624bb/streamlining-delivery-and-logistics.jpg?width=1400&preferwebp=true&quality=82",
-    icon: <Briefcase className="h-8 w-8 sm:h-10 sm:w-10 text-[#FFB800]" />,
+    icon: <Scale className="h-8 w-8 sm:h-10 sm:w-10 text-[#FFB800]" />,
     bgColor: "bg-[#3E3E4E]",
-    btnClass: "bg-[#FFB800] text-[#3E3E4E]"
+    btnClass: "bg-[#FFB800] text-[#3E3E4E]",
+    stats: "5% Member / 10% Non-Member Interest"
   },
   {
-    title: "AGRI-BUSINESS",
-    description: "Empowering farmers with equipment loans and seasonal input financing. Boost your productivity with specialized agricultural credit.",
-    image: "https://coffeeheads.com/wp-content/uploads/2018/04/Blog-Pic-Harvesting__1597682371_94.206.192.97.jpg",
-    icon: <Tractor className="h-8 w-8 sm:h-10 sm:w-10 text-[#FFB800]" />,
-    bgColor: "bg-[#003322]",
-    btnClass: "border-[#FFB800] text-[#FFB800]"
-  },
-  {
-    title: "SCHOOL FEES LOAN",
-    description: "Invest in your children's future without the stress. Our education loans are processed quickly to meet school opening deadlines.",
+    title: "UNIVERSITY TUITION",
+    description: "Specifically designed to support members who are transitioning to university. Access affordable credit to bridge the gap for entry fees.",
     image: "https://blog.lendsqr.com/wp-content/uploads/2025/05/How-to-get-a-student-loan-in-Uganda.webp",
     icon: <GraduationCap className="h-8 w-8 sm:h-10 sm:w-10 text-[#FFB800]" />,
-    bgColor: "bg-[#3E3E4E]",
-    btnClass: "bg-[#FFB800] text-[#3E3E4E]"
+    bgColor: "bg-[#003322]",
+    btnClass: "border-[#FFB800] text-[#FFB800]",
+    stats: "Supports Post-Graduation Entry"
   },
   {
-    title: "ASSET FINANCING",
-    description: "Acquire land, machinery, or vehicles through our structured asset financing. Own your assets while you pay back gradually.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=800",
+    title: "ENTERPRISE STARTUP",
+    description: "For members not joining university, we provide capital to start small enterprises or income-generating activities in our community.",
+    image: "https://media.gettyimages.com/id/1151368592/photo/taxi-with-the-taxi-driver-posing-in-hillbrow-johannesburg.jpg?s=612x612&w=0&k=20&c=4m9x8pDnLB3I2OogORjG_t4rxzAFyx4Tp_jvq1zUcac=",
+    icon: <Briefcase className="h-8 w-8 sm:h-10 sm:w-10 text-[#FFB800]" />,
+    bgColor: "bg-[#3E3E4E]",
+    btnClass: "bg-[#FFB800] text-[#3E3E4E]",
+    stats: "Empowering Local Commerce"
+  },
+  {
+    title: "WELFARE SUPPORT",
+    description: "Emergency support for members in need. Subject to agreed conditions and cabinet approval to ensure fair distribution.",
+    image: "https://picsum.photos/seed/welfare/800/600",
     icon: <Home className="h-8 w-8 sm:h-10 sm:w-10 text-[#FFB800]" />,
     bgColor: "bg-[#003322]",
-    btnClass: "border-[#FFB800] text-[#FFB800]"
+    btnClass: "border-[#FFB800] text-[#FFB800]",
+    stats: "Community-Focused Welfare"
   }
 ]
 
@@ -51,7 +55,7 @@ export default function ProductsPage() {
         
         <div className="container mx-auto px-6 relative z-10 text-center">
           <KineticHeadline 
-            lines={["OUR LOAN", "PRODUCTS"]} 
+            lines={["OUR LOAN", "PRINCIPLES"]} 
             className="text-4xl sm:text-7xl lg:text-[10rem] font-black uppercase tracking-tighter leading-[0.85] font-headline text-[#c9922a]"
             staggerDelay={0.2}
           />
@@ -79,7 +83,12 @@ export default function ProductsPage() {
               "text-white"
             )}>
               <div className="max-w-md space-y-6 sm:space-y-8 w-full slide-up">
-                <div className="mb-4">{prod.icon}</div>
+                <div className="flex items-center justify-between">
+                   {prod.icon}
+                   <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#FFB800] border border-[#FFB800]/30 px-3 py-1 rounded-full">
+                      {prod.stats}
+                   </span>
+                </div>
                 <KineticHeadline 
                   lines={[prod.title]} 
                   className="text-3xl sm:text-4xl md:text-5xl font-bold font-serif text-[#FFB800] leading-tight"
@@ -90,7 +99,7 @@ export default function ProductsPage() {
                 <div className="pt-4">
                   <MagneticButton className="w-full sm:w-auto">
                     <Button className={cn("w-full sm:w-auto h-16 px-12 rounded-full font-black text-lg sm:text-xl group", prod.btnClass)}>
-                      APPLY NOW <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform" />
+                      REQUEST FORM <ArrowRight className="ml-2 h-6 w-6 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </MagneticButton>
                 </div>
@@ -103,12 +112,12 @@ export default function ProductsPage() {
       <section className="py-20 lg:py-32 bg-[#003322] text-white text-center px-6 overflow-hidden">
         <div className="container mx-auto">
           <KineticHeadline 
-            lines={["NEED A CUSTOM PLAN?"]} 
+            lines={["AFFORDABLE CREDIT"]} 
             className="text-3xl sm:text-5xl lg:text-7xl font-black uppercase font-headline mb-8 lg:mb-12 leading-tight"
           />
           <MagneticButton className="w-full sm:w-auto">
             <Button variant="outline" className="w-full sm:w-auto border-[#FFB800] text-[#FFB800] hover:bg-[#FFB800] hover:text-[#003322] font-black h-16 sm:h-20 px-10 lg:px-12 rounded-full text-lg sm:text-2xl group transition-all duration-500">
-              CONTACT AN ADVISOR <ArrowRight className="ml-2 h-8 w-8 group-hover:translate-x-2 transition-transform" />
+              CONSULT THE CABINET <ArrowRight className="ml-2 h-8 w-8 group-hover:translate-x-2 transition-transform" />
             </Button>
           </MagneticButton>
         </div>

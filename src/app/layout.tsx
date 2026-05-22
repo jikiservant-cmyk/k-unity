@@ -7,31 +7,31 @@ import { Toaster } from '@/components/ui/toaster';
 export const metadata: Metadata = {
   metadataBase: new URL('https://ncfonlinechurch.netlify.app'),
   title: {
-    default: 'K-unity Finance SACCO | Kololo High School Origins',
-    template: '%s | K-unity Finance SACCO',
+    default: 'Kololo High Student SACCO | Building Financially Responsible Students',
+    template: '%s | Kololo High Student SACCO',
   },
-  description: 'Empowering communities through K-unity Finance SACCO. Founded at Kololo High School, we offer transparent savings and affordable loans.',
-  keywords: ['K-unity SACCO', 'Kololo High School SACCO', 'Finance Uganda', 'Savings Cooperative Kampala', 'Community Banking'],
-  authors: [{ name: 'K-unity Finance SACCO' }],
-  creator: 'K-unity Finance SACCO',
-  publisher: 'K-unity Finance SACCO',
+  description: 'The official Kololo High Student’s Saving and Credit Cooperative Society. Promoting a culture of saving, responsible borrowing, and financial literacy among students.',
+  keywords: ['Kololo High School SACCO', 'Student SACCO Uganda', 'Student Savings', 'K-unity Finance', 'Cooperative Banking'],
+  authors: [{ name: 'Kololo High Student SACCO' }],
+  creator: 'Kololo High Student SACCO',
+  publisher: 'Kololo High Student SACCO',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: 'K-unity Finance SACCO | Secure Your Future',
-    description: 'Join K-unity Finance SACCO for reliable savings and affordable business credit. Originating from Kololo High School.',
+    title: 'Kololo High Student SACCO | Save for Your Future',
+    description: 'Empowering A’ level students at Kololo High School through financial literacy and affordable credit.',
     url: 'https://ncfonlinechurch.netlify.app',
-    siteName: 'K-unity Finance SACCO',
+    siteName: 'Kololo High Student SACCO',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'K-unity Finance SACCO | Secure Your Future',
-    description: 'Empowering the community through cooperative financial excellence with roots in Kololo High School.',
+    title: 'Kololo High Student SACCO | Secure Your Future',
+    description: 'Promoting a culture of saving and financial discipline within the Kololo High School community.',
   },
 };
 

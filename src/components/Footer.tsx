@@ -13,60 +13,60 @@ export function Footer() {
                 alt="K-unity Logo" 
                 className="h-12 w-auto object-contain brightness-110"
               />
-              <span className="text-2xl font-serif text-white tracking-tight">
-                K-unity <span className="text-[#c9922a]">Finance SACCO</span>
-              </span>
+              <div className="flex flex-col">
+                <span className="text-xl font-serif text-white tracking-tight leading-none">
+                  Kololo High
+                </span>
+                <span className="text-[#c9922a] text-[10px] uppercase tracking-widest font-bold mt-1">
+                  Student SACCO
+                </span>
+              </div>
             </Link>
             <p className="text-sm leading-relaxed font-body font-light max-w-xs">
-              Rooted in the excellence of Kololo High School, K-unity Finance SACCO empowers members through transparent financial services.
+              Promoting a culture of regular saving, responsible borrowing, and financial literacy among students.
             </p>
             <p className="text-[11px] text-white/30 uppercase tracking-widest font-bold">
-              Licensed by UMRA · Reg. No. UMRA/DT/0124
+              Supervised by School Administration
             </p>
           </div>
 
           <div>
-            <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-white mb-8">Services</h4>
+            <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-white mb-8">Saving Tiers</h4>
             <ul className="space-y-4 text-sm font-light">
-              <li><Link href="/savings" className="hover:text-[#c9922a] transition-colors">Savings Accounts</Link></li>
-              <li><Link href="/sermons" className="hover:text-[#c9922a] transition-colors">Personal Loans</Link></li>
-              <li><Link href="/sermons" className="hover:text-[#c9922a] transition-colors">Business Loans</Link></li>
-              <li><Link href="/sermons" className="hover:text-[#c9922a] transition-colors">School Fees Loan</Link></li>
-              <li><Link href="/sermons" className="hover:text-[#c9922a] transition-colors">Share Capital</Link></li>
+              <li><span className="hover:text-[#c9922a] transition-colors cursor-default">Basic (2.5K/wk)</span></li>
+              <li><span className="hover:text-[#c9922a] transition-colors cursor-default">Moderate (5K/wk)</span></li>
+              <li><span className="hover:text-[#c9922a] transition-colors cursor-default">Super (10K/wk)</span></li>
+              <li><span className="hover:text-[#c9922a] transition-colors cursor-default">Premium (15K/wk)</span></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-white mb-8">Quick Links</h4>
+            <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-white mb-8">SACCO Links</h4>
             <ul className="space-y-4 text-sm font-light">
-              <li><Link href="/about" className="hover:text-[#c9922a] transition-colors">About Us</Link></li>
-              <li><Link href="/contact" className="hover:text-[#c9922a] transition-colors">Visit Our Office</Link></li>
-              <li><Link href="/savings" className="hover:text-[#c9922a] transition-colors">Savings Plans</Link></li>
-              <li><Link href="/contact" className="hover:text-[#c9922a] transition-colors">Apply Online</Link></li>
+              <li><Link href="/about" className="hover:text-[#c9922a] transition-colors">Cabinet Structure</Link></li>
+              <li><Link href="/contact" className="hover:text-[#c9922a] transition-colors">Join as Investor</Link></li>
+              <li><Link href="/sermons" className="hover:text-[#c9922a] transition-colors">Loan Policy</Link></li>
+              <li><Link href="/savings" className="hover:text-[#c9922a] transition-colors">Saving Cycles</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-white mb-8">Contact</h4>
+            <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-white mb-8">Location</h4>
             <ul className="space-y-6 text-sm font-light">
               <li className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 text-[#c9922a] mt-1 shrink-0" />
-                <span>Kololo High School Area, Kampala, Uganda</span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <Phone className="h-4 w-4 text-[#c9922a] shrink-0" />
-                <span>(+256) 763 019052</span>
+                <span>Kololo High School, Kampala, Uganda</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-[#c9922a] shrink-0" />
-                <span>info@k-unitysacco.co.ug</span>
+                <span>info@kololohighsacco.co.ug</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-[12px] font-light">© {new Date().getFullYear()} K-unity Finance SACCO. All rights reserved.</p>
+          <p className="text-[12px] font-light">© {new Date().getFullYear()} Kololo High Student’s SACCO. All rights reserved.</p>
           <div className="flex space-x-6">
             <Link href="#" className="text-white/20 hover:text-[#c9922a] transition-colors"><Facebook className="h-5 w-5" /></Link>
             <Link href="#" className="text-white/20 hover:text-[#c9922a] transition-colors"><Twitter className="h-5 w-5" /></Link>
