@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 
 const navLinks = [
   { name: "Home", href: "/" },
+  { name: "My Wallet", href: "/wallet" },
   { name: "About", href: "/about" },
   { name: "Loan Products", href: "/sermons" },
   { name: "Savings", href: "/savings" },
@@ -84,7 +85,7 @@ export function Navbar() {
 
           <div className="flex items-center space-x-4">
             <div className="hidden md:flex items-center">
-              <Link href="/contact">
+              <Link href="/join">
                 <Button className={cn(
                   "bg-[#c9922a] hover:bg-[#e8b455] text-white border-none rounded-[6px] font-medium transition-all",
                   isScrolled ? "px-5 h-9 text-xs" : "px-7 h-11 text-sm"
@@ -120,7 +121,7 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Link href="/contact" onClick={() => setIsOpen(false)}>
+          <Link href="/join" onClick={() => setIsOpen(false)}>
             <Button className="w-full bg-[#c9922a] text-white rounded-[6px] h-14 text-lg">
               Join as Investor
             </Button>
